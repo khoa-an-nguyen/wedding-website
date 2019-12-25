@@ -2,10 +2,11 @@ import { Link } from 'gatsby'
 import React from 'react'
 import Helmet from 'react-helmet'
 import { Waypoint } from 'react-waypoint'
-import pic01 from '../assets/images/pic01.jpg'
 import Header from '../components/Header'
 import Layout from '../components/layout'
 import Nav from '../components/Nav'
+import Timeline from '../components/timeline'
+import Intro from '../components/intro'
 
 class Index extends React.Component {
   constructor(props) {
@@ -25,165 +26,205 @@ class Index extends React.Component {
 
   render() {
     return (
-      <Layout>
-        <Helmet title="Gatsby Starter - Stellar" />
+      <div>
+        <Layout>
+          <Helmet title="#TheNewLeNguyens" />
+          {/* <Header /> */}
+          <Waypoint
+            onEnter={this._handleWaypointEnter}
+            onLeave={this._handleWaypointLeave}
+          ></Waypoint>
+          <Nav sticky={this.state.stickyNav} />
 
-        <Header />
-
-        <Waypoint
-          onEnter={this._handleWaypointEnter}
-          onLeave={this._handleWaypointLeave}
-        ></Waypoint>
-        <Nav sticky={this.state.stickyNav} />
-
-        <div id="main">
-          <section id="intro" className="main">
-            <div className="spotlight">
-              <div className="content">
-                <header className="major">
-                  <h2>Ipsum sed adipiscing</h2>
-                </header>
-                <p>
-                  Sed lorem ipsum dolor sit amet nullam consequat feugiat
-                  consequat magna adipiscing magna etiam amet veroeros. Lorem
-                  ipsum dolor tempus sit cursus. Tempus nisl et nullam lorem
-                  ipsum dolor sit amet aliquam.
+          <div id="main">
+          <Intro />
+            <section id="intro" className="main special">
+              {/* Add how we met here */}
+              {/* Add wedding party here? */}
+              <div className="spotlight">
+                <div className="content">
+                  <header className="major">
+                    <h2>How We Met</h2>
+                  </header>
+                  <p>
+                    It was January 2012, the spring semester of their Freshman year at James Madison University. My-Anh and Khoa both attended the Asian Co-Org Mixer; 
+                    My-Anh went to learn more about the Vietnamese Student Association (VSA) while Khoa went to hangout with his friends (and eat the free cupcakes!). 
+                    It was there where Khoa first noticed My-Anh and after seeing her sign up for Culture Show, he immediately asked the Director if she could sign My-Anh up to be his partner in the Fashion Show act. 
+                    Although My-Anh ultimately ended up not being able to take part in the fashion show, they slowly got to know each other the months thereafter. 
+                    From walking to and from GISAT 116 class together, getting lunches, studying together and hanging out at VSA parties...they became close friends and on October 20, 2012, Khoa officially asked My-Anh to be his girlfriend.
                 </p>
+                <div>[Add parallax picture here]</div>
+                  <div><Timeline /></div>
+                </div>
+              </div>
+            </section>
+            <section id="first" className="main special">
+              <header className="major">
+                <h2>The Party</h2>
+              </header>
+              <div>
+                <div className="wedding-party-wrapper">
+                  <ul className="features">
+                  <li>
+                      <span className="icon major fa-copy"></span>
+                      <h3>My-Lien Bourdon</h3>
+                      <h5>Matron of Honor</h5>
+                    </li>
+                    <li>
+                      <span className="icon major fa-code"></span>
+                      <h3>Stacy Learn</h3>
+                      <h5>Maid of Honor</h5>
+                    </li>
+                    <li>
+                      <span className="icon major fa-diamond"></span>
+                      <h3>Evita Le</h3>
+                      <h5>Bridesmaid</h5>
+                    </li>
+                    <li>
+                      <span className="icon major fa-diamond"></span>
+                      <h3>Natalie Ngu</h3>
+                      <h5>Bridesmaid</h5>
+                    </li>
+                    <li>
+                      <span className="icon major fa-diamond"></span>
+                      <h3>Phuong Nguyen</h3>
+                      <h5>Bridesmaid</h5>
+                    </li>
+                    <li>
+                      <span className="icon major fa-diamond"></span>
+                      <h3>Samantha Phun</h3>
+                      <h5>Bridesmaid</h5>
+                    </li>
+                    <li>
+                      <span className="icon major fa-diamond"></span>
+                      <h3>Priscillia Pham</h3>
+                      <h5>Bridesmaid</h5>
+                    </li>
+                    <li>
+                      <span className="icon major fa-diamond"></span>
+                      <h3>Vi Lam</h3>
+                      <h5>Bridesmaid</h5>
+                    </li>
+                  </ul>
+                </div>
+                <div className="wedding-party-wrapper">
+                  <ul className="features">
+                  <li>
+                      <span className="icon major fa-copy"></span>
+                      <h3>Beo Nguyen</h3>
+                      <h5>Best Man</h5>
+                    </li>
+                    <li>
+                      <span className="icon major fa-code"></span>
+                      <h3>Kevin Cox</h3>
+                      <h5>Best Man</h5>
+                    </li>
+                    <li>
+                      <span className="icon major fa-diamond"></span>
+                      <h3>Michael Vo</h3>
+                      <h5>Groomsman</h5>
+                    </li>
+                    <li>
+                      <span className="icon major fa-diamond"></span>
+                      <h3>Joseph Chung</h3>
+                      <h5>Groomsman</h5>
+                    </li>
+                    <li>
+                      <span className="icon major fa-diamond"></span>
+                      <h3>Dara Nget</h3>
+                      <h5>Groomsman</h5>
+                    </li>
+                    <li>
+                      <span className="icon major fa-diamond"></span>
+                      <h3>Daniel Rillo</h3>
+                      <h5>Groomsman</h5>
+                    </li>
+                    <li>
+                      <span className="icon major fa-diamond"></span>
+                      <h3>Tuan Dang</h3>
+                      <h5>Groomsman</h5>
+                    </li>
+                    <li>
+                      <span className="icon major fa-diamond"></span>
+                      <h3>Justin Chaphiv</h3>
+                      <h5>Groomsman</h5>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <footer className="major">
+              </footer>
+            </section>
+
+            {/* <section id="second" className="main special">
+              <header className="major">
+                <h2>Schedule</h2>
+                <p>
+                  Donec imperdiet consequat consequat. Suspendisse feugiat congue
+                <br />
+                  posuere. Nulla massa urna, fermentum eget quam aliquet.
+              </p>
+              </header>
+              <footer className="major">
                 <ul className="actions">
                   <li>
                     <Link to="/generic" className="button">
                       Learn More
-                    </Link>
+                  </Link>
                   </li>
                 </ul>
-              </div>
-              <span className="image">
-                <img src={pic01} alt="" />
-              </span>
-            </div>
-          </section>
+              </footer>
+            </section>
 
-          <section id="first" className="main special">
-            <header className="major">
-              <h2>Magna veroeros</h2>
-            </header>
-            <ul className="features">
-              <li>
-                <span className="icon major style1 fa-code"></span>
-                <h3>Ipsum consequat</h3>
+            <section id="accommodations" className="main special">
+              <header className="major">
+                <h2>Accommodations</h2>
                 <p>
-                  Sed lorem amet ipsum dolor et amet nullam consequat a feugiat
-                  consequat tempus veroeros sed consequat.
-                </p>
-              </li>
-              <li>
-                <span className="icon major style3 fa-copy"></span>
-                <h3>Amed sed feugiat</h3>
-                <p>
-                  Sed lorem amet ipsum dolor et amet nullam consequat a feugiat
-                  consequat tempus veroeros sed consequat.
-                </p>
-              </li>
-              <li>
-                <span className="icon major style5 fa-diamond"></span>
-                <h3>Dolor nullam</h3>
-                <p>
-                  Sed lorem amet ipsum dolor et amet nullam consequat a feugiat
-                  consequat tempus veroeros sed consequat.
-                </p>
-              </li>
-            </ul>
-            <footer className="major">
-              <ul className="actions">
-                <li>
-                  <Link to="/generic" className="button">
-                    Learn More
-                  </Link>
-                </li>
-              </ul>
-            </footer>
-          </section>
-
-          <section id="second" className="main special">
-            <header className="major">
-              <h2>Ipsum consequat</h2>
-              <p>
-                Donec imperdiet consequat consequat. Suspendisse feugiat congue
+                  We recommend staying at around Old Town Leesburg or even booking an AirBnb around the area!
                 <br />
-                posuere. Nulla massa urna, fermentum eget quam aliquet.
+                  <br />
+                  Please let us know if you're booking an Airbnb!
               </p>
-            </header>
-            <ul className="statistics">
-              <li className="style1">
-                <span className="icon fa-code-fork"></span>
-                <strong>5,120</strong> Etiam
-              </li>
-              <li className="style2">
-                <span className="icon fa-folder-open-o"></span>
-                <strong>8,192</strong> Magna
-              </li>
-              <li className="style3">
-                <span className="icon fa-signal"></span>
-                <strong>2,048</strong> Tempus
-              </li>
-              <li className="style4">
-                <span className="icon fa-laptop"></span>
-                <strong>4,096</strong> Aliquam
-              </li>
-              <li className="style5">
-                <span className="icon fa-diamond"></span>
-                <strong>1,024</strong> Nullam
-              </li>
-            </ul>
-            <p className="content">
-              Nam elementum nisl et mi a commodo porttitor. Morbi sit amet nisl
-              eu arcu faucibus hendrerit vel a risus. Nam a orci mi, elementum
-              ac arcu sit amet, fermentum pellentesque et purus. Integer maximus
-              varius lorem, sed convallis diam accumsan sed. Etiam porttitor
-              placerat sapien, sed eleifend a enim pulvinar faucibus semper quis
-              ut arcu. Ut non nisl a mollis est efficitur vestibulum. Integer
-              eget purus nec nulla mattis et accumsan ut magna libero. Morbi
-              auctor iaculis porttitor. Sed ut magna ac risus et hendrerit
-              scelerisque. Praesent eleifend lacus in lectus aliquam porta. Cras
-              eu ornare dui curabitur lacinia.
-            </p>
-            <footer className="major">
+              </header>
               <ul className="actions">
                 <li>
-                  <Link to="/generic" className="button">
-                    Learn More
-                  </Link>
-                </li>
-              </ul>
-            </footer>
-          </section>
-
-          <section id="cta" className="main special">
-            <header className="major">
-              <h2>Congue imperdiet</h2>
-              <p>
-                Donec imperdiet consequat consequat. Suspendisse feugiat congue
-                <br />
-                posuere. Nulla massa urna, fermentum eget quam aliquet.
-              </p>
-            </header>
-            <footer className="major">
-              <ul className="actions">
-                <li>
-                  <Link to="/generic" className="button special">
-                    Get Started
-                  </Link>
+                  <a href="https://www.marriott.com" className="button special">
+                    Leesburg Marriott
+                  </a>
                 </li>
                 <li>
-                  <Link to="/generic" className="button">
-                    Learn More
-                  </Link>
+                  <a href="https://www.airbnb.com" className="button special">
+                    AirBnb
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.salamanderresort.com/" className="button special">
+                    Salamander Resort
+                  </a>
                 </li>
               </ul>
-            </footer>
-          </section>
-        </div>
-      </Layout>
+            </section>
+            <section id="things-to-do" className="main special">
+              <header className="major">
+                <h2>Things To Do</h2>
+              </header>
+              <footer className="major">
+              </footer>
+            </section>
+            <section id="faqs" className="main special">
+              <header className="major">
+                <h2>(Most Likely) Frequently Asked Questions</h2>
+              </header>
+              <p>Q: What is the dress code?</p>
+              <p>A: Cocktail! Polish those shoes, and iron those dresses!</p>
+              <p>Q: Transportation to Hotel?</p>
+              <p>A: Stay Tuned! We will be figuring out transporation once we have an accurate count on bookings.</p>
+              <footer className="major">
+              </footer>
+            </section> */}
+          </div>
+        </Layout>
+      </div>
     )
   }
 }

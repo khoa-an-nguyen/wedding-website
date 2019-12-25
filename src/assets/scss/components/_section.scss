@@ -6,99 +6,109 @@
 
 /* Section/Article */
 
-	section, article {
-		&.special {
-			text-align: center;
-		}
-	}
+section,
+article {
+  &.special {
+    text-align: center;
+  }
 
-	header {
-		&.major {
-			margin-bottom: (_size(element-margin) * 1.5);
+  .wedding-party-wrapper {
+    display: inline-block;
+    width: 50%;
+  }
+}
 
-			h2 {
-				font-size: 2em;
+header {
+  &.major {
+    margin-bottom: (_size(element-margin) * 1.5);
 
-				&:after {
-					display: block;
-					content: '';
-					width: 3.25em;
-					height: 2px;
-					margin: (_size(element-margin) * 0.35) 0 (_size(element-margin) * 0.5) 0;
-					border-radius: 2px;
+    h2 {
+      font-size: 2em;
 
-					section.special &, article.special & {
-						margin-left: auto;
-						margin-right: auto;
-					}
-				}
-			}
+      &:after {
+        display: block;
+        content: '';
+        width: 3.25em;
+        height: 2px;
+        margin: (_size(element-margin) * 0.35) 0 (_size(element-margin) * 0.5) 0;
+        border-radius: 2px;
 
-			p {
-				font-size: 1.25em;
-				letter-spacing: _font(letter-spacing);
-			}
+        section.special &,
+        article.special & {
+          margin-left: auto;
+          margin-right: auto;
+        }
+      }
+    }
 
-			&.special {
-				text-align: center;
+    p {
+      font-size: 1.25em;
+      letter-spacing: _font(letter-spacing);
+    }
 
-				h2 {
-					&:after {
-						margin-left: auto;
-						margin-right: auto;
-					}
-				}
-			}
-		}
-	}
+    &.special {
+      text-align: center;
 
-	footer {
-		&.major {
-			margin-top: (_size(element-margin) * 1.5);
-		}
-	}
+      h2 {
+        &:after {
+          margin-left: auto;
+          margin-right: auto;
+        }
+      }
+    }
+  }
+}
 
-	@include breakpoint(small) {
-		header {
-			&.major {
-				margin-bottom: 0;
+footer {
+  &.major {
+    margin-top: (_size(element-margin) * 1.5);
+  }
+}
 
-				h2 {
-					font-size: 1.5em;
-				}
+@include breakpoint(small) {
+  header {
+    &.major {
+      margin-bottom: 0;
 
-				p {
-					font-size: 1em;
-					letter-spacing: 0;
+      h2 {
+        font-size: 1.5em;
+      }
 
-					br {
-						display: none;
-					}
-				}
-			}
-		}
+      p {
+        font-size: 1em;
+        letter-spacing: 0;
 
-		footer {
-			&.major {
-				margin-top: 0;
-			}
-		}
-	}
+        br {
+          display: none;
+        }
+      }
+    }
+  }
 
-	@mixin color-section($p: null) {
-		header {
-			&.major {
-				h2 {
-					&:after {
-						background-color: _palette($p, border);
+  footer {
+    &.major {
+      margin-top: 0;
+    }
+  }
+}
 
-						@if $p == 'invert' {
-							@include vendor('background-image', 'linear-gradient(90deg, #{_palette(accent1)}, #{_palette(accent3)}, #{_palette(accent5)})');
-						}
-					}
-				}
-			}
-		}
-	}
+@mixin color-section($p: null) {
+  header {
+    &.major {
+      h2 {
+        &:after {
+          background-color: _palette($p, border);
 
-	@include color-section;
+          @if $p == 'invert' {
+            @include vendor(
+              'background-image',
+              'linear-gradient(90deg, #{_palette(accent1)}, #{_palette(accent3)}, #{_palette(accent5)})'
+            );
+          }
+        }
+      }
+    }
+  }
+}
+
+@include color-section;

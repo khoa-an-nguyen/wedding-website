@@ -1,8 +1,9 @@
+const path = require(`path`)
 module.exports = {
   siteMetadata: {
-    title: "Gatsby Starter - Stellar by HTML5 UP",
-    author: "Hunter Chang",
-    description: "A Gatsby.js Starter based on Stellar by HTML5 UP"
+    title: "My-Anh & Khoa",
+    author: "Khoa Nguyen",
+    description: "My-Anh and Khoa's Wedding website."
   },
   plugins: [
     'gatsby-plugin-react-helmet',
@@ -19,6 +20,15 @@ module.exports = {
       },
     },
     'gatsby-plugin-sass',
-    'gatsby-plugin-offline'
+    'gatsby-plugin-offline',
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: path.join(__dirname, `src`, `test`),
+      },
+    },
+    `gatsby-transformer-sharp`, 
+    `gatsby-plugin-sharp`
   ],
 }
