@@ -20,15 +20,15 @@ const Footer = props => (
       </ul>
     </section>
     <section>
-      <h2>Etiam feugiat</h2>
+      <h2>Contact</h2>
       <dl className="alt">
         <dt>Address</dt>
-        <dd>1234 Somewhere Road &bull; Nashville, TN 00000 &bull; USA</dd>
+        <dd>21950 Traction Place &bull; Sterling, VA 20164 &bull; USA</dd>
         <dt>Phone</dt>
-        <dd>(000) 000-0000 x 0000</dd>
+        <dd>(703) 975-8069</dd>
         <dt>Email</dt>
         <dd>
-          <a href="https://codebushi.com">information@untitled.tld</a>
+          <a href="https://codebushi.com">khoa22693@gmail.com</a>
         </dd>
       </dl>
       <ul className="icons">
@@ -50,23 +50,11 @@ const Footer = props => (
             <span className="label">Instagram</span>
           </a>
         </li>
-        <li>
-          <a
-            href="https://github.com/codebushi/gatsby-starter-stellar"
-            className="icon fa-github alt"
-          >
-            <span className="label">GitHub</span>
-          </a>
-        </li>
-        <li>
-          <a href="https://codebushi.com" className="icon fa-dribbble alt">
-            <span className="label">Dribbble</span>
-          </a>
-        </li>
       </ul>
     </section>
     <p className="copyright">
-      &copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.
+      &copy; Khoa Nguyen. 
+      {/* Design: <a href="https://html5up.net">HTML5 UP</a>. */}
     </p>
   </footer>
 )
