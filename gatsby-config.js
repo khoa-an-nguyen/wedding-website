@@ -29,6 +29,12 @@ module.exports = {
       },
     },
     `gatsby-transformer-sharp`, 
-    `gatsby-plugin-sharp`
+    `gatsby-plugin-sharp`,
+    {
+      resolve: `gatsby-plugin-s3`,
+      options: {
+        bucketName: "www.thenewlenguyens.com",
+      },
+    },
   ],
 }
