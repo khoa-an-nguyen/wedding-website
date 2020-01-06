@@ -1,24 +1,53 @@
-import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
-import Img from "gatsby-image"
+import React from 'react'
+import { graphql, StaticQuery } from 'gatsby'
+import styled from 'styled-components'
 
-const Intro = () => {
-  const data = useStaticQuery(graphql`
-  query ImageQuery {
-    file(relativePath: {eq: "lincoln-memorial-landscape.jpg"}) {
-      childImageSharp {
-        fluid {
-            ...GatsbyImageSharpFluid
+import BackgroundImage from 'gatsby-background-image'
+const ImageText = styled.h1`
+
+`;
+
+const Intro = ({ className }) => (
+  <StaticQuery
+    query={graphql`
+      query {
+        desktop: file(relativePath: { eq: "portrait-alley.jpg" }) {
+          childImageSharp {
+            fluid(quality: 90, maxWidth: 1920) {
+              ...GatsbyImageSharpFluid_withWebp
+            }
+          }
         }
       }
-    }
-  }
-`)
-  return (
-    <section>
-      <Img fluid={data.file.childImageSharp.fluid} />
-    </section>
-  )
-}
+    `}
+    render={data => {
+      // Set ImageData.
+      const imageData = data.desktop.childImageSharp.fluid
+      return (
+        <section>
+          <BackgroundImage
+            Tag="section"
+            className={className}
+            fluid={imageData}
+            backgroundColor={`#000000`}
+            classId="testtttt"
+          >
+            <div>
+              <h1 id="hero-text">My-Anh & Khoa</h1>
+              <h2 id="hero-text">Friday, October 2, 2020</h2>
+            </div>
+          </BackgroundImage>
+        </section>
+      )
+    }}
+  />
+)
 
-export default Intro
+const StyledBackgroundSection = styled(Intro)`
+  width: 100%;
+  height: 700px;
+  display: flex;
+  align-items: flex-end;
+`
+
+export default StyledBackgroundSection

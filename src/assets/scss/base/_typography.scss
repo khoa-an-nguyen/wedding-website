@@ -211,6 +211,12 @@
 		hr {
 			border-bottom-color: _palette($p, border);
 		}
+
+		#hero-text {
+			color: #ffffff;
+			margin-left: 1.5rem;
+			cursor: default;
+		}
 	}
 
 	@include color-typography;
