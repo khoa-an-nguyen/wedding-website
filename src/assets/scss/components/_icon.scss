@@ -37,6 +37,24 @@
 			}
 		}
 
+		&.party {
+			display: inline-block;
+			padding: 0.65em;
+			margin: 0 0 0 0;
+			cursor: default;
+
+			&:before {
+				display: inline-block;
+				font-size: 2.0rem;
+				width: 2.25em;
+				height: 2.25em;
+				line-height: 2.2em;
+				border-radius: 100%;
+				border: solid 1px;
+				text-align: center;
+			}
+		}
+
 		&.alt {
 			display: inline-block;
 			border: solid 1px;
