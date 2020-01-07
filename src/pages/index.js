@@ -7,6 +7,10 @@ import Layout from '../components/layout'
 import Nav from '../components/Nav'
 import Timeline from '../components/timeline'
 import Intro from '../components/intro'
+import StyledBackgroundSection from '../components/BackgroundSection'
+import StyledBackgroundSectionTwo from '../components/BackgroundSectionTwo'
+import StyledBackgroundSectionThree from '../components/BackgroundSectionThree'
+import shadowcreeklogo from '../images/shadowcreek-logo.png'
 
 class Index extends React.Component {
   constructor(props) {
@@ -39,8 +43,6 @@ class Index extends React.Component {
           <div id="main">
           <Intro />
             <section id="intro" className="main special">
-              {/* Add how we met here */}
-              {/* Add wedding party here? */}
               <div className="spotlight">
                 <div className="content">
                   <header className="major">
@@ -53,11 +55,14 @@ class Index extends React.Component {
                     Although My-Anh ultimately ended up not being able to take part in the fashion show, they slowly got to know each other the months thereafter. 
                     From walking to and from GISAT 116 class together, getting lunches, studying together and hanging out at VSA parties...they became close friends and on October 20, 2012, Khoa officially asked My-Anh to be his girlfriend.
                 </p>
-                <div>[Add parallax picture here]</div>
-                  <div><Timeline /></div>
+                  
                 </div>
               </div>
             </section>
+            <StyledBackgroundSection></StyledBackgroundSection>
+            <section><div><Timeline /></div></section>
+            <StyledBackgroundSectionTwo></StyledBackgroundSectionTwo>
+
             <section id="first" className="main special">
               <header className="major">
                 <h2>The Party</h2>
@@ -65,45 +70,19 @@ class Index extends React.Component {
               <div>
                 <div className="wedding-party-wrapper">
                   <ul className="features">
-                  <li>
+                  <li className="groom">
                       <span className="icon major fa-copy"></span>
-                      <h3>My-Lien Bourdon</h3>
-                      <h5>Matron of Honor</h5>
+                      <div>
+                        <h3>My-Lien Bourdon</h3>
+                        <h5>Matron of Honor</h5>
+                      </div>
                     </li>
-                    <li>
+                    <li className="groom">
                       <span className="icon major fa-code"></span>
-                      <h3>Stacy Learn</h3>
-                      <h5>Maid of Honor</h5>
-                    </li>
-                    <li>
-                      <span className="icon major fa-diamond"></span>
-                      <h3>Evita Le</h3>
-                      <h5>Bridesmaid</h5>
-                    </li>
-                    <li>
-                      <span className="icon major fa-diamond"></span>
-                      <h3>Natalie Ngu</h3>
-                      <h5>Bridesmaid</h5>
-                    </li>
-                    <li>
-                      <span className="icon major fa-diamond"></span>
-                      <h3>Phuong Nguyen</h3>
-                      <h5>Bridesmaid</h5>
-                    </li>
-                    <li>
-                      <span className="icon major fa-diamond"></span>
-                      <h3>Samantha Phun</h3>
-                      <h5>Bridesmaid</h5>
-                    </li>
-                    <li>
-                      <span className="icon major fa-diamond"></span>
-                      <h3>Priscillia Pham</h3>
-                      <h5>Bridesmaid</h5>
-                    </li>
-                    <li>
-                      <span className="icon major fa-diamond"></span>
-                      <h3>Vi Lam</h3>
-                      <h5>Bridesmaid</h5>
+                      <div>
+                        <h3>Stacy Learn</h3>
+                        <h5>Maid of Honor</h5>
+                      </div>
                     </li>
                   </ul>
                 </div>
@@ -111,59 +90,38 @@ class Index extends React.Component {
                   <ul className="features">
                   <li>
                       <span className="icon major fa-copy"></span>
-                      <h3>Beo Nguyen</h3>
-                      <h5>Best Man</h5>
+                      <div>
+                        <h3>Beo Nguyen</h3>
+                        <h5>Best Man</h5>
+                      </div>
                     </li>
                     <li>
                       <span className="icon major fa-code"></span>
-                      <h3>Kevin Cox</h3>
-                      <h5>Best Man</h5>
-                    </li>
-                    <li>
-                      <span className="icon major fa-diamond"></span>
-                      <h3>Michael Vo</h3>
-                      <h5>Groomsman</h5>
-                    </li>
-                    <li>
-                      <span className="icon major fa-diamond"></span>
-                      <h3>Joseph Chung</h3>
-                      <h5>Groomsman</h5>
-                    </li>
-                    <li>
-                      <span className="icon major fa-diamond"></span>
-                      <h3>Dara Nget</h3>
-                      <h5>Groomsman</h5>
-                    </li>
-                    <li>
-                      <span className="icon major fa-diamond"></span>
-                      <h3>Daniel Rillo</h3>
-                      <h5>Groomsman</h5>
-                    </li>
-                    <li>
-                      <span className="icon major fa-diamond"></span>
-                      <h3>Tuan Dang</h3>
-                      <h5>Groomsman</h5>
-                    </li>
-                    <li>
-                      <span className="icon major fa-diamond"></span>
-                      <h3>Justin Chaphiv</h3>
-                      <h5>Groomsman</h5>
+                      <div>
+                        <h3>Kevin Cox</h3>
+                        <h5>Best Man</h5>
+                      </div>
                     </li>
                   </ul>
                 </div>
               </div>
               <footer className="major">
+              <ul className="actions">
+                  <li>
+                    <Link to="/wedding-party" className="button">
+                      Check Out the rest of the Party!
+                  </Link>
+                  </li>
+                </ul>
               </footer>
             </section>
 
-            {/* <section id="second" className="main special">
+            <section id="second" className="main special">
               <header className="major">
                 <h2>Schedule</h2>
-                <p>
-                  Donec imperdiet consequat consequat. Suspendisse feugiat congue
-                <br />
-                  posuere. Nulla massa urna, fermentum eget quam aliquet.
-              </p>
+                  <p>
+                    Our schedule is coming soon! Stay tuned!
+                  </p>
               </header>
               <footer className="major">
                 <ul className="actions">
@@ -204,10 +162,19 @@ class Index extends React.Component {
                 </li>
               </ul>
             </section>
-            <section id="things-to-do" className="main special">
+            <StyledBackgroundSectionThree></StyledBackgroundSectionThree>
+            <section id="location" className="main special">
               <header className="major">
-                <h2>Things To Do</h2>
+                <h2>Location</h2>
               </header>
+              <div>
+                <img src={shadowcreeklogo} alt=""></img>
+                <h3>Shadow Creek</h3>
+                <p>
+                  18090 SILCOTT SPRINGS ROAD
+                </p>
+                <p>PURCELLVILLE, VIRGINIA 20132</p>
+              </div>
               <footer className="major">
               </footer>
             </section>
@@ -221,7 +188,7 @@ class Index extends React.Component {
               <p>A: Stay Tuned! We will be figuring out transporation once we have an accurate count on bookings.</p>
               <footer className="major">
               </footer>
-            </section> */}
+            </section>
           </div>
         </Layout>
       </div>
