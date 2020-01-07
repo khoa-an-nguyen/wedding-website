@@ -212,10 +212,21 @@
 			border-bottom-color: _palette($p, border);
 		}
 
-		#hero-text {
+		.main-image-text {
 			color: #ffffff;
-			margin-left: 1.5rem;
 			cursor: default;
+		}
+		#hero-text {
+			margin-left: 1em;		
+			font-size: 3.2em;
+			font-family: 'scriptina', cursive;
+			margin: .6em;
+		}
+
+		#date-text {
+			margin-left: 1em;
+			font-family: 'Raleway', sans-serif;
+			font-size: 2em;
 		}
 	}
 

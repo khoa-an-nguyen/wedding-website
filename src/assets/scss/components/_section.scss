@@ -65,6 +65,14 @@ footer {
   }
 }
 
+#hero-section {
+  background: rgba(0, 0, 0, 1);
+}
+
+.gatsby-background-image-testtttt:before {
+  opacity: 0.6 !important;
+}
+
 @include breakpoint(small) {
   header {
     &.major {

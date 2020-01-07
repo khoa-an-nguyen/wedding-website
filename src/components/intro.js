@@ -31,10 +31,12 @@ const Intro = ({ className }) => (
             fluid={imageData}
             backgroundColor={`#000000`}
             classId="testtttt"
+            id="hero-section"
+            opacity= "0.6"
           >
             <div>
-              <h1 id="hero-text">My-Anh & Khoa</h1>
-              <h2 id="hero-text">Friday, October 2, 2020</h2>
+              <h1 id="hero-text" class="main-image-text">My-Anh & Khoa</h1>
+              <h2 id="date-text" class="main-image-text">Friday, October 2, 2020</h2>
             </div>
           </BackgroundImage>
         </section>
@@ -43,11 +45,13 @@ const Intro = ({ className }) => (
   />
 )
 
+// Figure out styled components for media queries?
 const StyledBackgroundSection = styled(Intro)`
   width: 100%;
-  height: 700px;
+  height: 800px;
   display: flex;
   align-items: flex-end;
+  justify-content: center;
 `
 
 export default StyledBackgroundSection
