@@ -28,7 +28,7 @@ const Footer = props => (
         <dd>(703) 975-8069</dd>
         <dt>Email</dt>
         <dd>
-          <a href="https://codebushi.com">khoa22693@gmail.com</a>
+          <a href="https://codebushi.com">thenewlenguyens@gmail.com</a>
         </dd>
       </dl>
       <ul className="icons">
