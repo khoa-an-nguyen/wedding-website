@@ -4,17 +4,14 @@ import React from 'react'
 const Footer = props => (
   <footer id="footer">
     <section>
-      <h2>Aliquam sed mauris</h2>
+      <h2>Any Questions?</h2>
       <p>
-        Sed lorem ipsum dolor sit amet et nullam consequat feugiat consequat
-        magna adipiscing tempus etiam dolore veroeros. eget dapibus mauris. Cras
-        aliquet, nisl ut viverra sollicitudin, ligula erat egestas velit, vitae
-        tincidunt odio.
+        If you have any questions feel free to visit our FAQ page or contact us directly!
       </p>
       <ul className="actions">
         <li>
           <Link to="/generic" className="button">
-            Learn More
+            FAQs
           </Link>
         </li>
       </ul>
