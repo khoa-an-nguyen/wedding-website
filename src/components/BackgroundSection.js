@@ -34,7 +34,7 @@ const BackgroundSectionOne = ({ className }) => (
 
 const StyledBackgroundSection = styled(BackgroundSectionOne)`
   width: 100%;
-  height: 200px;
+  height: 500px;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
