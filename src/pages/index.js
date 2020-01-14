@@ -60,7 +60,13 @@ class Index extends React.Component {
               </div>
             </section>
             <StyledBackgroundSection></StyledBackgroundSection>
-            <section><div><Timeline /></div></section>
+            <section className="main special">
+            <header className="major">
+                <h2>Our Story</h2>
+              </header>
+              <div><Timeline />
+              </div>
+            </section>
             <StyledBackgroundSectionTwo></StyledBackgroundSectionTwo>
 
             <section id="first" className="main special">
@@ -124,13 +130,6 @@ class Index extends React.Component {
                   </p>
               </header>
               <footer className="major">
-                <ul className="actions">
-                  <li>
-                    <Link to="/generic" className="button">
-                      Learn More
-                  </Link>
-                  </li>
-                </ul>
               </footer>
             </section>
 
