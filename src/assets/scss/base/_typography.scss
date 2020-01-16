@@ -229,6 +229,10 @@
 			font-family: 'Raleway', sans-serif;
 			font-size: 2em;
 		}
+
+		#calendar-wrapper {
+			text-align: center;
+		}
 	}
 
 	@include color-typography;

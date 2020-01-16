@@ -1,0 +1,78 @@
+.react-add-to-calendar {
+    @include vendor('appearance', 'none');
+    @include vendor('transition', (
+        'background-color #{_duration(transition)} ease-in-out',
+        'color #{_duration(transition)} ease-in-out'
+    ));
+    margin: 0 auto;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+    position: relative;
+    display: inline-block;
+    -webkit-font-smoothing: antialiased;
+    .react-add-to-calendar {
+        zoom: 1;
+        cursor: pointer;
+        @mixin color-button($p: null) {
+
+        &:hover {
+            background-color: _palette($p, border-bg);
+        }
+        &:active {
+            background-color: _palette($p, border2-bg);
+        }
+
+    }
+    }
+    
+    .react-add-to-calendar__dropdown {
+        position: absolute;
+        top: 30px;
+        width: 100%;
+        padding: 5px 0 5px 8px;
+        box-shadow: 1px 3px 6px rgba(0, 0, 0, 0.15);
+        text-align: left;
+        border: 1px solid #a8a8a8;
+        background-color: #fff;
+
+        ul {
+            list-style: none;
+            padding-left: 0em;
+            margin: 0;
+    
+            li {
+                display: list-item;
+                text-align: -webkit-match-parent;
+                box-sizing: none;
+                padding-left: 0em;
+                padding-right: .03em;
+                a {
+                    text-decoration: none;
+                    color: #000;
+                    border-bottom: none;
+                    i {
+                        padding-right: 10px;
+                    }
+                }
+            }
+        }
+
+    }
+
+    .react-add-to-calendar__wrapper {
+        zoom: 1;
+        cursor: pointer;
+    }
+
+    .react-add-to-calendar__button {
+        padding: 10px;
+        background-color: #ffffff;
+        border: 1px solid #aab9d4;
+        color: #000000;
+        border-radius: 3px;
+        text-decoration: none;
+        cursor: pointer;
+        i {
+            padding-right: .5em;
+        }
+    }
+}
