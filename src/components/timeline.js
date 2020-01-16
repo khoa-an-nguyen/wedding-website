@@ -7,7 +7,7 @@ const Timeline = () => (
         <VerticalTimelineElement
             className="vertical-timeline-element--education"
             date="January 2012"
-            iconStyle={{ background: 'rgb(90, 91, 93)', color: '#fff' }}
+            iconStyle={{ background: 'rgb(90, 91, 93)', color: '#fff', textAlign: 'center' }}
             icon={<i className="flaticon-university"></i>}
         >
             <h3 className="vertical-timeline-element-title">When We Met</h3>
@@ -17,7 +17,7 @@ const Timeline = () => (
         <VerticalTimelineElement
             className="vertical-timeline-element--education"
             date="October 20, 2012"
-            iconStyle={{ background: 'rgb(90, 91, 93)', color: '#fff' }}
+            iconStyle={{ background: 'rgb(90, 91, 93)', color: '#fff', textAlign: 'center' }}
             icon={<i className="flaticon-couple"></i>}
         >
             <h3 className="vertical-timeline-element-title">When We Became Official</h3>
@@ -27,7 +27,7 @@ const Timeline = () => (
         <VerticalTimelineElement
             className="vertical-timeline-element--work"
             date="November 28, 2018"
-            iconStyle={{ background: 'rgb(90, 91, 93)', color: '#fff' }}
+            iconStyle={{ background: 'rgb(90, 91, 93)', color: '#fff', textAlign: 'center' }}
             icon={<i className="flaticon-wedding-ring"></i>}
         >
             <h3 className="vertical-timeline-element-title">The Engagement</h3>
@@ -40,7 +40,8 @@ const Timeline = () => (
         <VerticalTimelineElement
             className="vertical-timeline-element--work"
             date="October 02, 2020"
-            iconStyle={{ background: 'rgb(90, 91, 93)', color: '#fff' }}
+            style={{alignItems: 'center'}}
+            iconStyle={{ background: 'rgb(90, 91, 93)', color: '#fff', textAlign: 'center' }}
             icon={<i className="flaticon-toast"></i>}
         >
             <h1 className="vertical-timeline-element-title">The Wedding!</h1>

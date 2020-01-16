@@ -25,9 +25,13 @@
 [class^="flaticon-"]:before, [class*=" flaticon-"]:before,
 [class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
   font-family: Flaticon;
-        font-size: 1.6em;
+        font-size: 2em;
 font-style: normal;
-margin-left: .08em;
+/* margin-left: 20%; */
+}
+
+.flaticon-toast {
+  margin-left: 0.3em
 }
 
 .flaticon-wedding-ring:before { content: "\f100"; }
