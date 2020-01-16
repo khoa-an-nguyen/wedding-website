@@ -132,7 +132,21 @@ class Index extends React.Component {
               <footer className="major">
               </footer>
             </section>
-
+            <StyledBackgroundSectionThree></StyledBackgroundSectionThree>
+            <section id="location" className="main special">
+              <header className="major">
+                <h2>Location</h2>
+              </header>
+              <div>
+                <img src={shadowcreeklogo} alt=""></img>
+                <h3>Shadow Creek</h3>
+                <strong>
+                  18090 SILCOTT SPRINGS ROAD PURCELLVILLE, VIRGINIA 20132
+                </strong>
+              </div>
+              <footer className="major">
+              </footer>
+            </section>
             <section id="accommodations" className="main special">
               <header className="major">
                 <h2>Accommodations</h2>
@@ -160,22 +174,6 @@ class Index extends React.Component {
                   </a>
                 </li>
               </ul>
-            </section>
-            <StyledBackgroundSectionThree></StyledBackgroundSectionThree>
-            <section id="location" className="main special">
-              <header className="major">
-                <h2>Location</h2>
-              </header>
-              <div>
-                <img src={shadowcreeklogo} alt=""></img>
-                <h3>Shadow Creek</h3>
-                <p>
-                  18090 SILCOTT SPRINGS ROAD
-                </p>
-                <p>PURCELLVILLE, VIRGINIA 20132</p>
-              </div>
-              <footer className="major">
-              </footer>
             </section>
             <section id="faqs" className="main special">
               <header className="major">

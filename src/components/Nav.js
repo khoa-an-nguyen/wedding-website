@@ -22,13 +22,13 @@ const Nav = (props) => (
             </li>
             {/* Maybe create into own page and not section w/ smooth scroll? */}
             <li>
-                <Scroll type="id" element="accommodations">
-                    <a href="#">Accommodations</a>
+                <Scroll type="id" element="location">
+                    <a href="#">Location</a>
                 </Scroll>
             </li>
             <li>
-                <Scroll type="id" element="location">
-                    <a href="#">Location</a>
+                <Scroll type="id" element="accommodations">
+                    <a href="#">Accommodations</a>
                 </Scroll>
             </li>
             <li>
