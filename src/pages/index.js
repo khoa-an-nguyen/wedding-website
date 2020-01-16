@@ -60,7 +60,7 @@ class Index extends React.Component {
               </div>
             </section>
             <StyledBackgroundSection></StyledBackgroundSection>
-            <section className="main special">
+            <section className="main">
             <header className="major">
                 <h2>Our Story</h2>
               </header>
@@ -115,7 +115,7 @@ class Index extends React.Component {
               <ul className="actions">
                   <li>
                     <Link to="/wedding-party" className="button">
-                      Check Out the rest of the Party!
+                      Check Out the Rest of the Party!
                   </Link>
                   </li>
                 </ul>
