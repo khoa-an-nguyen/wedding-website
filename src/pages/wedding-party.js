@@ -15,7 +15,7 @@ class Generic extends React.Component {
           <section id="first" className="main special">
             {/* <span className="image main"><img src={pic04} alt="" /></span> */}
             <div>
-                <div className="wedding-party-wrapper">
+                <div className="wedding-party-wrapper-page">
                   <h3>Team Bride</h3>
                   <ul className="wedding-party">
                   <li className="groom">
@@ -76,7 +76,7 @@ class Generic extends React.Component {
                     </li>
                   </ul>
                 </div>
-                <div className="wedding-party-wrapper">
+                <div className="wedding-party-wrapper-page">
                 <h3>Team Groom</h3>
                   <ul className="wedding-party">
                   <li className="groom">

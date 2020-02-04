@@ -16,7 +16,7 @@
 		list-style: none;
 
 		li {
-			width: calc(#{(100% / 1)} - #{_size(element-margin)});
+			width: calc(#{(100% / 4)} - #{_size(element-margin)});
 			margin-left: _size(element-margin);
 			margin-top: (_size(element-margin) * 1.5);
 			padding: 0;

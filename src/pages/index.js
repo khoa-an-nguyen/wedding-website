@@ -11,6 +11,12 @@ import StyledBackgroundSection from '../components/BackgroundSection'
 import StyledBackgroundSectionTwo from '../components/BackgroundSectionTwo'
 import StyledBackgroundSectionThree from '../components/BackgroundSectionThree'
 import shadowcreeklogo from '../images/shadowcreek-logo.png'
+// TODO
+// temporary - will refactor later 
+import party1 from '../images/party/beo.jpeg'
+import party2 from '../images/party/mimi.jpg'
+import party3 from '../images/party/kevin.jpg'
+import party4 from '../images/party/stacy.jpeg'
 
 class Index extends React.Component {
   constructor(props) {
@@ -46,14 +52,10 @@ class Index extends React.Component {
               <div className="spotlight">
                 <div className="content">
                   <header className="major">
-                    <h2>How We Met</h2>
+                    <h2>Our Story</h2>
                   </header>
-                  <p>
-                    It was January 2012, the spring semester of their Freshman year at James Madison University. My-Anh and Khoa both attended the Asian Co-Org Mixer; 
-                    My-Anh went to learn more about the Vietnamese Student Association (VSA) while Khoa went to hangout with his friends (and eat the free cupcakes!). 
-                    It was there where Khoa first noticed My-Anh and after seeing her sign up for Culture Show, he immediately asked the Director if she could sign My-Anh up to be his partner in the Fashion Show act. 
-                    Although My-Anh ultimately ended up not being able to take part in the fashion show, they slowly got to know each other the months thereafter. 
-                    From walking to and from GISAT 116 class together, getting lunches, studying together and hanging out at VSA parties...they became close friends and on October 20, 2012, Khoa officially asked My-Anh to be his girlfriend.
+                <p>
+                  7 years, 100 days later.. Khoa finally popped the question to My-Anh!
                 </p>
                   
                 </div>
@@ -62,7 +64,7 @@ class Index extends React.Component {
             <StyledBackgroundSection></StyledBackgroundSection>
             <section className="main">
             <header className="major">
-                <h2>Our Story</h2>
+                <h2>Some Important Events Between Us</h2>
               </header>
               <div><Timeline />
               </div>
@@ -77,32 +79,28 @@ class Index extends React.Component {
                 <div className="wedding-party-wrapper">
                   <ul className="features">
                   <li className="groom">
-                      <span className="icon major fa-copy"></span>
+                      <span className="icon major"><img class="party-picture" src={party2} height="200" weight="200"></img></span>
                       <div>
                         <h3>My-Lien Bourdon</h3>
                         <h5>Matron of Honor</h5>
                       </div>
                     </li>
                     <li className="groom">
-                      <span className="icon major fa-code"></span>
+                      <span className="icon major"><img class="party-picture" src={party4} height="200" weight="200"></img></span>
                       <div>
                         <h3>Stacy Learn</h3>
                         <h5>Maid of Honor</h5>
                       </div>
                     </li>
-                  </ul>
-                </div>
-                <div className="wedding-party-wrapper">
-                  <ul className="features">
-                  <li>
-                      <span className="icon major fa-copy"></span>
+                    <li className="groom">
+                      <span className="icon major"><img class="party-picture" src={party1} height="200" weight="200"></img></span>
                       <div>
                         <h3>Beo Nguyen</h3>
                         <h5>Best Man</h5>
                       </div>
                     </li>
-                    <li>
-                      <span className="icon major fa-code"></span>
+                    <li className="groom">
+                      <span className="icon major"><img class="party-picture" src={party3} height="200" weight="200"></img></span>
                       <div>
                         <h3>Kevin Cox</h3>
                         <h5>Best Man</h5>
@@ -110,6 +108,24 @@ class Index extends React.Component {
                     </li>
                   </ul>
                 </div>
+                {/* <div className="wedding-party-wrapper">
+                  <ul className="features">
+                  <li>
+                      <span className="icon major"><img class="party-picture" src={party1} height="200" weight="200"></img></span>
+                      <div>
+                        <h3>Beo Nguyen</h3>
+                        <h5>Best Man</h5>
+                      </div>
+                    </li>
+                    <li>
+                      <span className="icon major"><img class="party-picture" src={party1} height="200" weight="200"></img></span>
+                      <div>
+                        <h3>Kevin Cox</h3>
+                        <h5>Best Man</h5>
+                      </div>
+                    </li>
+                  </ul>
+                </div> */}
               </div>
               <footer className="major">
               <ul className="actions">
