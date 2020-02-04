@@ -10,6 +10,7 @@ import Intro from '../components/intro'
 import StyledBackgroundSection from '../components/BackgroundSection'
 import StyledBackgroundSectionTwo from '../components/BackgroundSectionTwo'
 import StyledBackgroundSectionThree from '../components/BackgroundSectionThree'
+import Faqs from '../components/Faq'
 import shadowcreeklogo from '../images/shadowcreek-logo.png'
 // TODO
 // temporary - will refactor later 
@@ -195,10 +196,7 @@ class Index extends React.Component {
               <header className="major">
                 <h2>(Most Likely) Frequently Asked Questions</h2>
               </header>
-              <p>Q: What is the dress code?</p>
-              <p>A: Cocktail! Polish those shoes, and iron those dresses!</p>
-              <p>Q: Transportation to Hotel?</p>
-              <p>A: Stay Tuned! We will be figuring out transporation once we have an accurate count on bookings.</p>
+              <Faqs></Faqs>
               <footer className="major">
               </footer>
             </section>
