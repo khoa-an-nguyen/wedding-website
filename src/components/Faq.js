@@ -2,27 +2,25 @@ import React, { Component } from 'react';
 import Faq from 'react-faq-component';
  
 const data = {
-//   title: "FAQ (How it works)",
+  title: "Question Not Listed? Please Contact Us!",
   rows: [
     {
+      title: "Can I bring a plus one?",
+      content: `Per the guest limit at our venue, we will we not be able to accommodate special requests for additional guests to our wedding. Please follow the RSVPs since it will include the amount of people we intend to extend our invite for your family.`
+    },
+    {
+      title: "Is there a registry?",
+      content: "We are so happy that you’ll be able to join us for our wedding! Your presence at this special day alone is the greatest gift of all. As many of you know, we are currently saving up for our future home and plan on starting this next step in our journey after our wedding. However, we are setting up a website to fund our honeymoon and future necessities that we will be purchasing for our future homes.. so no need to haul a gift!"
+    },
+    {
       title: "What is the dress code?",
-      content: `Formal! Polish those shoes, and iron those dresses!`
+      content: `Formal attire! However, as the long goes on and the lights start to dim feel free to loosen those buttons and lose those ties/heels!`
     },
     {
       title: "Transportation to Hotel?",
-      content: "Stay Tuned! We will be figuring out transporation once we have an accurate count on bookings."
+      content: "We are currently figuring out transporation once we have an accurate count on bookings / what hotels are plan on room blocking!"
     },
-    {
-      title: "Curabitur laoreet, mauris vel blandit fringilla",
-      content: `Curabitur laoreet, mauris vel blandit fringilla, leo elit rhoncus nunc, ac sagittis leo elit vel lorem. 
-            Fusce tempor lacus ut libero posuere viverra. Nunc velit dolor, tincidunt at varius vel, laoreet vel quam. 
-            Sed dolor urna, lobortis in arcu auctor, tincidunt mattis ante. Vivamus venenatis ultricies nibh in volutpat. 
-            Cras eu metus quis leo vestibulum feugiat nec sagittis lacus.Mauris vulputate arcu sed massa euismod dignissim. `
-    },
-    {
-      title: "What is the package version",
-      content: "v1.0.0"
-    }]
+  ]
 }
  
 const styles = {

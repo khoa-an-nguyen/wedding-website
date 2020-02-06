@@ -17,7 +17,7 @@
 		position: absolute;
 		width: _size(inner);
 		max-width: calc(100% - #{_size(element-margin) * 2});
-		padding: 1em;
+		padding: .25em;
 		background-color: _palette(invert, bg-alt);
 		border-top-left-radius: _size(border-radius-main);
 		border-top-right-radius: _size(border-radius-main);
@@ -26,6 +26,10 @@
 
 		& + #main {
 			padding-top: 4.25em;
+		}
+
+		#header-text {
+			font-size: 1.5em;
 		}
 
 		ul {
@@ -89,6 +93,10 @@
 						font-size: 0.9em;
 					}
 				}
+			}
+
+			#header-text {
+				font-size: 1em;
 			}
 		}
 

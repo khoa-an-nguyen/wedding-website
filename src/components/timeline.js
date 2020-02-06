@@ -12,7 +12,7 @@ const Timeline = () => (
         >
             <h3 className="vertical-timeline-element-title">When We Met</h3>
             <h4 className="vertical-timeline-element-subtitle">Harrisonburg, VA</h4>
-            <p>GISAT Class, VSA, Co-Org Mixer</p>
+            <p>My-Anh and Khoa met during their time in the Vietnamese Student Association (VSA) and quickly culminating into a close friendship. </p>
         </VerticalTimelineElement>
         <VerticalTimelineElement
             className="vertical-timeline-element--education"
@@ -22,7 +22,7 @@ const Timeline = () => (
         >
             <h3 className="vertical-timeline-element-title">When We Became Official</h3>
             <h4 className="vertical-timeline-element-subtitle">Charlottesville, VA</h4>
-            <p>In downtown Charlottesville</p>
+            <p>After heading down to downtown Charlottesville, VA as a getaway from JMU and having some delicious dumplings from Maro and Luca, Khoa mustered up the courage to ask My-Anh to be his girlfriend!</p>
         </VerticalTimelineElement>
         <VerticalTimelineElement
             className="vertical-timeline-element--work"
@@ -48,7 +48,7 @@ const Timeline = () => (
             <h4 className="vertical-timeline-element-subtitle">Shadow Creek</h4>
             <h4 className="vertical-timeline-element-subtitle">Purcellville, VA</h4>
             <p>
-                Now join us to celebrate the wedding of the new Mr and Mrs Nguyen!
+                After 7 years and counting... we are so excited to have our family, friends, and loved ones to join us in celebrating our love!
             </p>
         </VerticalTimelineElement>
     </VerticalTimeline>

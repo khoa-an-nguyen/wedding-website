@@ -23,6 +23,41 @@ article {
     display: inline-block;
     width: 50%;
   }
+    .travel-wrapper {
+      display: flex;
+      margin-top: 1em;
+    }
+    .travel-section {
+      width: 100%;
+    }
+    hr.vertical {
+      height:100%; /* you might need some positioning for this to work, see other questions about 100% height */
+      width:0;
+      border:1px solid black;
+    }
+
+  @include breakpoint(medium) {
+    .travel-wrapper {
+      display: flex;
+      flex-direction: column;
+      margin-top: 1em;
+    }
+    .travel-section {
+      width: 100%;
+    }
+  }
+
+  @include breakpoint(small) {
+    .travel-wrapper {
+      display: flex;
+      flex-direction: column;
+      margin-top: 1em;
+    }
+    .travel-section {
+      width: 100%;
+    }
+  }
+
 }
 
 header {

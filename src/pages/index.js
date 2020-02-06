@@ -46,7 +46,6 @@ class Index extends React.Component {
             onLeave={this._handleWaypointLeave}
           ></Waypoint>
           <Nav sticky={this.state.stickyNav} />
-
           <div id="main">
           <Intro />
             <section id="intro" className="main special">
@@ -109,24 +108,6 @@ class Index extends React.Component {
                     </li>
                   </ul>
                 </div>
-                {/* <div className="wedding-party-wrapper">
-                  <ul className="features">
-                  <li>
-                      <span className="icon major"><img class="party-picture" src={party1} height="200" weight="200"></img></span>
-                      <div>
-                        <h3>Beo Nguyen</h3>
-                        <h5>Best Man</h5>
-                      </div>
-                    </li>
-                    <li>
-                      <span className="icon major"><img class="party-picture" src={party1} height="200" weight="200"></img></span>
-                      <div>
-                        <h3>Kevin Cox</h3>
-                        <h5>Best Man</h5>
-                      </div>
-                    </li>
-                  </ul>
-                </div> */}
               </div>
               <footer className="major">
               <ul className="actions">
@@ -157,9 +138,66 @@ class Index extends React.Component {
               <div>
                 <img src={shadowcreeklogo} alt=""></img>
                 <h3>Shadow Creek</h3>
-                <strong>
-                  18090 SILCOTT SPRINGS ROAD PURCELLVILLE, VIRGINIA 20132
-                </strong>
+                <address>18090 Silcott Springs Road</address>
+                <address>Purcellville, Virginia 20132</address>
+                <a href="https://goo.gl/maps/wCGF24ZfsJMxDzer7" className="button">Get Directions</a>
+                <div class="travel-wrapper">
+                  <div class="travel-section">
+                    <div>
+                      <span class="icon fa-copy"></span>
+                      <h2>Traveling from Virginia</h2>
+                      <h4>Directions</h4>
+                    </div>
+                    {/* <p>Toll Route:
+                      1. Begin on VA-267 W (Dulles Toll Road/Dulles Greenway) toward Leesburg
+                      2. Take Exit 1A - US-15 S/VA-7 W/Leesburg Bypass toward Leesburg/Warrenton
+                      3. After 9.3 miles, take the VA-287 S exit toward VA-7 BUS/Purcellville/Lovettsville and turn left onto VA-287 S/Berlin Turnpike
+                      4. Continue straight through the traffic circle to continue on State Rte 1610
+                      5. After 2 miles, turn left on State Rte 690/Silcott Springs Road
+                      6. After 0.7 miles, Shadow Creek will be on the left
+                    </p> */}
+                    <p>Toll Route</p>
+                    <ol>
+                      <li>Begin on VA-267 W (Dulles Toll Road/Dulles Greenway) toward Leesburg</li>
+                      <li>Take Exit 1A - US-15 S/VA-7 W/Leesburg Bypass toward Leesburg/Warrenton</li>
+                      <li>After 9.3 miles, take the VA-287 S exit toward VA-7 BUS/Purcellville/Lovettsville and turn left onto VA-287 S/Berlin Turnpike</li>
+                      <li>Continue straight through the traffic circle to continue on State Rte 1610</li>
+                      <li>After 2 miles, turn left on State Rte 690/Silcott Springs Road</li>
+                      <li>After 0.7 miles, Shadow Creek will be on the left</li>
+                    </ol>
+                    <p>Toll Free Route</p>
+                    <ol>
+                      <li>Begin on VA-7 W (Route 7 West) toward Leesburg/Winchester</li>
+                      <li>Take the exit ramp to merge onto US-15 S/VA-7 W/Leesburg Bypass </li>
+                      <li>After 9.3 miles, take the VA-287 S exit toward VA-7 BUS/Purcellville/Lovettsville and turn left onto VA-287 S/Berlin Turnpike</li>
+                      <li>Continue straight through the traffic circle to continue on State Rte 1610</li>
+                      <li>After 2 miles, turn left on State Rte 690/Silcott Springs Road</li>
+                      <li>After 0.7 miles, Shadow Creek will be on the left</li>
+                    </ol>
+                  </div>
+                  {/* <hr></hr> */}
+                  <div class="travel-section">
+                    <div>
+                      <span class="icon fa-copy"></span>
+                      <h2>Traveling from Maryland</h2>
+                      <h4>Directions</h4>
+                    </div>
+                    <ol>
+                      <li>Begin on I-270 North towards Frederick</li>
+                      <li>Use the right 2 lanes to take Exit 32 to merge onto I-70 West toward Hagerstown</li>
+                      <li>Take Exit 52 to merge onto US-15 South/US-340 West</li>
+                      <li>Take the Exit for MD-17 toward Brunswick/Burkittsville and exit the traffic circle onto MD-17/Burkittsville</li>
+                      <li>Continue through each traffic circle to stay on MD-17 </li>
+                      <li>Merge right to stay on MD-17 South/Burkittsville Rd/Petersville Rd</li>
+                      <li>Stay on Burkittsville Rd through the traffic circle before the MD-VA bridge</li>
+                      <li>Cross the bridge into Virginia, where Burkittsville Rd becomes Berlin Turnpike</li>
+                      <li>Turn left on Town Center Dr to stay on Berlin Turnpike in Lovettsville</li>
+                      <li>Continue straight through the traffic circle to continue on State Rte 1610</li>
+                      <li>After 2 miles, turn left on State Rte 690/Silcott Springs Road</li>
+                      <li>After 0.7 miles, Shadow Creek will be on the left</li>
+                    </ol>
+                  </div>
+                </div>
               </div>
               <footer className="major">
               </footer>
@@ -194,7 +232,7 @@ class Index extends React.Component {
             </section>
             <section id="faqs" className="main special">
               <header className="major">
-                <h2>(Most Likely) Frequently Asked Questions</h2>
+                <h2>Frequently Asked Questions</h2>
               </header>
               <Faqs></Faqs>
               <footer className="major">

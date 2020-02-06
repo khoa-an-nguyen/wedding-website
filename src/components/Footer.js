@@ -3,7 +3,7 @@ import React from 'react'
 
 const Footer = props => (
   <footer id="footer">
-    <section>
+    {/* <section>
       <h2>Any Questions?</h2>
       <p>
         If you have any questions feel free to visit our FAQ page or contact us directly!
@@ -15,9 +15,9 @@ const Footer = props => (
           </Link>
         </li>
       </ul>
-    </section>
+    </section> */}
     <section>
-      <h2>Contact</h2>
+      <h2>Any Questions? Contact Us!</h2>
       <dl className="alt">
         <dt>Address</dt>
         <dd>21950 Traction Place &bull; Sterling, VA 20164 &bull; USA</dd>
