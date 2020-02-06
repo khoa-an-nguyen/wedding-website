@@ -25,6 +25,10 @@
 			font-size: 12pt;
 		}
 
+		@include breakpoint(medium) {
+			font-size: 10pt;
+		}
+
 		@include breakpoint(xxsmall) {
 			font-size: 11pt;
 		}
