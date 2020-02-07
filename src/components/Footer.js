@@ -20,9 +20,9 @@ const Footer = props => (
       <h2>Any Questions? Contact Us!</h2>
       <dl className="alt">
         <dt>Address</dt>
-        <dd>21950 Traction Place &bull; Sterling, VA 20164 &bull; USA</dd>
+        <dd>21500 Glebe View Drive &bull; Broadlands, VA 20148 &bull; USA</dd>
         <dt>Phone</dt>
-        <dd>(703) 975-8069</dd>
+        <dd>(703) 975-8069 &bull; (703) 338-0704</dd>
         <dt>Email</dt>
         <dd>
           <a href="https://codebushi.com">thenewlenguyens@gmail.com</a>
