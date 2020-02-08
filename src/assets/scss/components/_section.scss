@@ -35,6 +35,9 @@ article {
       width:0;
       border:1px solid black;
     }
+    .odometer-block {
+      font-size: 1.25em;
+    }
 
   @include breakpoint(medium) {
     .travel-wrapper {

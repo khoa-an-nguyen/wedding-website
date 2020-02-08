@@ -10,6 +10,7 @@ import Intro from '../components/intro'
 import StyledBackgroundSection from '../components/BackgroundSection'
 import StyledBackgroundSectionTwo from '../components/BackgroundSectionTwo'
 import StyledBackgroundSectionThree from '../components/BackgroundSectionThree'
+import CountDown from '../components/CountDown'
 import Faqs from '../components/Faq'
 import shadowcreeklogo from '../images/shadowcreek-logo.png'
 // TODO
@@ -47,7 +48,6 @@ class Index extends React.Component {
               onLeave={this._handleWaypointLeave}>
               </Waypoint>
           </section>
-
           <Nav sticky={this.state.stickyNav} />
           <div id="main">
               <Intro />
@@ -57,22 +57,27 @@ class Index extends React.Component {
                   <header className="major">
                     <h2>Our Story</h2>
                   </header>
-                <p>
-                  7 years, 100 days later.. Khoa finally popped the question to My-Anh!
-                </p>
-                  
+                  <h3>How We Met</h3>
+                    <p>After 18 years of My-Anh traveling to over 7 countries, living the life of a “global nomad” (as she would say),  and well with Khoa… never straying from Northern Virginia, our paths crossed when we met in Harrisonburg, Virginia at James Madison University (<span>Go Dukes!</span>).</p>
+                  <h3>Start of Being College Sweethearts</h3>
+                    <p>On a sunny, breezy day of October 20th, 2012 in Downtown Charlottesville, Khoa asked My-Anh to be his girlfriend with a sharpie. napkin, and some <span>sloppy handwriting.</span></p>
+                  <h3>The Proposal</h3>
+                    <p>6 years, 1 month, 8 days later… Khoa finally mustered up the courage to propose to My-Anh in Sint Maarten (18°1'27.660"N 63°4'38.150”W).</p>
+                  <p>We can't wait to celebrate with our friends, family, and loved ones on this next journey of our life! Let the countdown begin!</p>
+                <CountDown id="countdown"></CountDown>
                 </div>
               </div>
             </section>
             <StyledBackgroundSection></StyledBackgroundSection>
-            <section className="main">
+            {/* <section className="main">
             <header className="major">
                 <h2>Some Important Events Between Us</h2>
               </header>
-              <div><Timeline />
+              <div>
+                <Timeline />
               </div>
-            </section>
-            <StyledBackgroundSectionTwo></StyledBackgroundSectionTwo>
+            </section> */}
+            {/* <StyledBackgroundSectionTwo></StyledBackgroundSectionTwo> */}
 
             <section id="first" className="main special">
               <header className="major">
@@ -127,7 +132,7 @@ class Index extends React.Component {
               <header className="major">
                 <h2>Schedule</h2>
                   <p>
-                    Our schedule is coming soon! Stay tuned!
+                    We are currently finalizing a few things! Our Schedule is coming soon! Stay tuned!
                   </p>
               </header>
               <footer className="major">
@@ -143,7 +148,7 @@ class Index extends React.Component {
                 <h3>Shadow Creek</h3>
                 <address>18090 Silcott Springs Road</address>
                 <address>Purcellville, Virginia 20132</address>
-                <a href="https://goo.gl/maps/wCGF24ZfsJMxDzer7" className="button special">Get Directions</a>
+                <a href="https://goo.gl/maps/wCGF24ZfsJMxDzer7" className="button">Get Directions</a>
                 <div class="travel-wrapper">
                   <div class="travel-section">
                     <div>
