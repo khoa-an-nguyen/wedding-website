@@ -77,6 +77,17 @@
 				font-size: 1.05em;
 			}
 
+			&#countdown {
+				font-size: 1.25em;
+				&:hover {
+					font-size: 1.25em;
+				}
+
+				&:focus {
+					outline: 0;
+				}
+			}
+
 			&:active {
 				background-color: _palette($p, border2-bg);
 			}

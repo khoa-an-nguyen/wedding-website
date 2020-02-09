@@ -57,14 +57,14 @@ class Index extends React.Component {
                   <header className="major">
                     <h2>Our Story</h2>
                   </header>
-                  <h3>How We Met</h3>
-                    <p>After 18 years of My-Anh traveling to over 7 countries, living the life of a “global nomad” (as she would say),  and well with Khoa… never straying from Northern Virginia, our paths crossed when we met in Harrisonburg, Virginia at James Madison University (<span>Go Dukes!</span>).</p>
-                  <h3>Start of Being College Sweethearts</h3>
+                  <h3 class="story-header">How We Met</h3>
+                    <p>After 18 years of My-Anh traveling to over 7 countries, living the life of a “global nomad” (as she would say),  and well with Khoa… never straying from Northern Virginia, our paths crossed when we met in Harrisonburg, Virginia at James Madison University (<span id="dukes">Go Dukes!</span>).</p>
+                  <h3 class="story-header">Start of Being College Sweethearts</h3>
                     <p>On a sunny, breezy day of October 20th, 2012 in Downtown Charlottesville, Khoa asked My-Anh to be his girlfriend with a sharpie. napkin, and some <span>sloppy handwriting.</span></p>
-                  <h3>The Proposal</h3>
+                  <h3 class="story-header">The Proposal</h3>
                     <p>6 years, 1 month, 8 days later… Khoa finally mustered up the courage to propose to My-Anh in Sint Maarten (18°1'27.660"N 63°4'38.150”W).</p>
                   <p>We can't wait to celebrate with our friends, family, and loved ones on this next journey of our life! Let the countdown begin!</p>
-                <CountDown id="countdown"></CountDown>
+                <button class="special" id="countdown"><span class="icon fa-clock-o"></span><CountDown id="countdown"></CountDown> until the day!</button>
                 </div>
               </div>
             </section>
@@ -203,6 +203,9 @@ class Index extends React.Component {
               </div>
               <footer className="major">
               </footer>
+            </section>
+            <section>
+              
             </section>
             <section id="accommodations" className="main special">
               <header className="major">

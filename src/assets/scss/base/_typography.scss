@@ -222,14 +222,23 @@
 		}
 		#hero-text {
 			// margin-left: 1em;		
-			font-size: 5em;
+			font-size: 3.5em;
 			font-family: 'adora bouton', cursive;
 			margin-bottom: 0em;
 			// margin: .6em;
 		}
+		#dukes {
+			font-family: impact;
+			color: gold;
+		}
 
 		.cursive-text {
 			font-family: 'nostalgia', cursive;
+			font-size: 2em;
+		}
+
+		.story-header {
+			font-family: 'adora bouton', cursive;
 		}
 
 		#date-text {

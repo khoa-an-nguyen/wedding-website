@@ -36,7 +36,7 @@ article {
       border:1px solid black;
     }
     .odometer-block {
-      font-size: 1.25em;
+      margin-left: .5em;
     }
 
   @include breakpoint(medium) {
