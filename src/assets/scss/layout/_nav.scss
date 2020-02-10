@@ -26,7 +26,7 @@
 		ul {
 			display: grid;
 			align-items: center;
-			grid-template-columns: 1fr repeat(5, auto) 1fr;
+			grid-template-columns: 1fr repeat(6, auto) 1fr;
 		}
 
 		& + #main {

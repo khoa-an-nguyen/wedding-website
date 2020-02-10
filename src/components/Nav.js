@@ -4,11 +4,18 @@ import Scroll from './Scroll'
 
 const Nav = (props) => (
     <nav id="nav" className={props.sticky ? 'alt' : ''}>
-        {/* <div><span id="header-text" class="icon cursive-text">My-Anh & Khoa</span></div> */}
+        {/* <div><span id="header-text" class="icon">October 2, 2020 Shadow Creek</span></div> */}
         <Scrollspy items={['intro', 'first', 'second', 'location', 'accommodations', 'faqs']} currentClassName="is-active" offset={-300}>
             <li>
                 <Scroll type="id" element="intro">
-                    <a id="logo-text" class="cursive-text" href="#">#TheNewLeNguyens</a>
+                    <div>
+                        <a id="logo-text" class="cursive-text" href="#">#TheNewLeNguyens</a>
+                    </div>
+                </Scroll>
+            </li>
+            <li>
+                <Scroll type="id" element="intro">
+                    <a href="#">Home</a>
                 </Scroll>
             </li>
             <li>
@@ -38,9 +45,9 @@ const Nav = (props) => (
                 </Scroll>
             </li>
             {/* <li>
-                <Scroll type="id" element="fourth">
-                    <a href="#">Contact Us</a>
-                </Scroll>
+            <Scroll type="id" element="faqs">
+                <a id="nav-date" href="#">10-02-20 Shadow Creek</a>
+            </Scroll>    
             </li> */}
         </Scrollspy>
     </nav>
