@@ -3,19 +3,6 @@ import React from 'react'
 
 const Footer = props => (
   <footer id="footer">
-    {/* <section>
-      <h2>Any Questions?</h2>
-      <p>
-        If you have any questions feel free to visit our FAQ page or contact us directly!
-      </p>
-      <ul className="actions">
-        <li>
-          <Link to="/generic" className="button">
-            FAQs
-          </Link>
-        </li>
-      </ul>
-    </section> */}
     <section>
       <h2>Any Questions? Contact Us!</h2>
       <dl className="alt">
