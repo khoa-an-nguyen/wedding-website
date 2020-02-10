@@ -35,7 +35,7 @@
             margin-bottom: 0;
         }
         
-        &.groom {
+        &.party-member {
             justify-content: flex-end; /* optional */
             align-items: flex-end;
         }
@@ -44,6 +44,19 @@
             border-radius: 50%;
             max-width: 80px;
             min-width: 80px;
+        }
+
+        &.party-member:hover {
+            font-size: 1.1em;
+            opacity: 1;
+            background-color: #d3d3d3;
+        
+            -webkit-transition: all 0.5s linear;
+            transition: all 0.2s linear;
+            img {
+                min-width: 90px;
+                min-height: 90px;
+            }
         }
 
 

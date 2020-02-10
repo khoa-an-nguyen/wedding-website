@@ -249,10 +249,17 @@
 			// margin-left: 1em;
 			font-family: 'Raleway', sans-serif;
 			font-size: 2em;
+			text-align: center;
 		}
 
 		#calendar-wrapper {
 			text-align: center;
+		}
+		.react-add-to-calendar__button {
+			span {
+				padding: .5em;
+				font-size: 1.1em;
+			}
 		}
 	}
 
