@@ -7,12 +7,12 @@ import HeaderGeneric from '../components/HeaderGeneric'
 // temporary - pictures of party  - refactor later
 import bride1 from '../images/party/mimi.jpg'
 import bride2 from '../images/party/stacy.jpeg'
-import bride3 from '../images/party/evita.jpg'
-import bride4 from '../images/party/natalie.jpg'
-import bride5 from '../images/party/phuong.jpg'
+import bride3 from '../images/party/evita2.png'
+import bride4 from '../images/party/nat.png'
+import bride5 from '../images/party/phuong2.png'
 import bride6 from '../images/party/sam.jpeg'
 import bride7 from '../images/party/pri.jpg'
-import bride8 from '../images/party/vi.jpg'
+import bride8 from '../images/party/vi2.jpg'
 import groom1 from '../images/party/beo.jpeg'
 import groom2 from '../images/party/kevin.jpg'
 import groom3 from '../images/party/michael.jpg'
@@ -36,7 +36,7 @@ class Generic extends React.Component {
             {/* <span className="image main"><img src={pic04} alt="" /></span> */}
             <div>
                 <div className="wedding-party-wrapper-page">
-                  <h3>Team Bride</h3>
+                  <h3 class="cursive-text party-text">Team Bride</h3>
                   <ul className="wedding-party">
                   <li className="groom">
                       <span className="icon party"><img class="party-picture" src={bride1} height="80" weight="80"></img></span>
@@ -97,7 +97,7 @@ class Generic extends React.Component {
                   </ul>
                 </div>
                 <div className="wedding-party-wrapper-page">
-                <h3>Team Groom</h3>
+                <h3 class="cursive-text party-text">Team Groom</h3>
                   <ul className="wedding-party">
                   <li className="groom">
                   <span className="icon party"><img class="party-picture" src={groom1} height="80" weight="80"></img></span>
