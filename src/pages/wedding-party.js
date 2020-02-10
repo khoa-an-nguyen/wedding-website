@@ -3,6 +3,7 @@ import Helmet from 'react-helmet'
 
 import Layout from '../components/layout'
 import HeaderGeneric from '../components/HeaderGeneric'
+import SubNavBar from '../components/SubPageNavBar'
 
 // temporary - pictures of party  - refactor later
 import bride1 from '../images/party/mimi.jpg'
@@ -31,6 +32,7 @@ class Generic extends React.Component {
       <Layout>
         <Helmet title="The Wedding Party" />
         <HeaderGeneric />
+        <SubNavBar/>
         <div id="main">
           <section id="first" className="main special">
             {/* <span className="image main"><img src={pic04} alt="" /></span> */}
