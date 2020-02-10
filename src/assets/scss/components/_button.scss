@@ -74,13 +74,13 @@
 
 			&:hover {
 				background-color: _palette($p, border-bg);
-				font-size: 1.05em;
+				// font-size: 1.05em;
 			}
 
 			&#countdown {
 				font-size: 1.25em;
 				&:hover {
-					font-size: 1.25em;
+					font-size: 1.15em;
 				}
 
 				&:focus {
