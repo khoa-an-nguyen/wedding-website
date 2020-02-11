@@ -2,7 +2,7 @@ import React from 'react'
 import Gallery from 'react-photo-gallery'
 import Layout from '../components/layout'
 import Helmet from 'react-helmet'
-import HeaderGeneric from '../components/HeaderGeneric'
+import SubNavBar from '../components/SubPageNavBar'
 import photo1 from '../images/gallery/landscape-captain-white.jpg'
 import photo2 from '../images/gallery/7e564ab5-50b0-4469-ab2d-c5fb698ba134_rw_1920.jpg'
 import photo3 from '../images/gallery/V50A3926.jpg'
@@ -91,7 +91,7 @@ export const photos = [
     height: 4.5
   },
   {
-    src: "https://source.unsplash.com/pF1ug8ysTtY/600x400",
+    src: photo15,
     width: 4,
     height: 3
   },
@@ -113,8 +113,7 @@ class PhotoGallery extends React.Component {
         <Helmet title="Photo Gallery" />
         <header id="header">
         <h1>Photo Gallery</h1>
-        <nav><button>Go Back</button></nav>
-        <p></p>
+        <SubNavBar/>
         </header>
         <Gallery photos={photos} direction={"column"} />
         </Layout>)
