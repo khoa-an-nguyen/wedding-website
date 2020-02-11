@@ -10,7 +10,7 @@
 	input[type="reset"],
 	input[type="button"],
 	button,
-	.button, .react-add-to-calendar__button {
+	.button {
 		@include vendor('appearance', 'none');
 		@include vendor('transition', (
 			'background-color #{_duration(transition)} ease-in-out',

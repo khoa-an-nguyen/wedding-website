@@ -66,7 +66,7 @@ class Index extends React.Component {
                   <h3 className="cursive-text">Start of Being College Sweethearts</h3>
                     <p>On a sunny, breezy day of October 20th, 2012 in Downtown Charlottesville, Khoa asked My-Anh to be his girlfriend with a sharpie. napkin, and some <span>sloppy handwriting.</span></p>
                   <h3 className="cursive-text">The Proposal</h3>
-                    <p>6 years, 1 month, 8 days later… Khoa finally mustered up the courage to propose to My-Anh in Sint Maarten (18°1'27.660"N 63°4'38.150”W).</p>
+                    <p>6 years, 1 month, 8 days later at noon...Khoa finally mustered up the courage to propose to My-Anh in Sint Maarten at <code>18°1'27.660"N 63°4'38.150”W</code>.</p>
                   <p>We can't wait to celebrate with our friends, family, and loved ones on this next journey of our life! Let the countdown begin!</p>
                 <div id="countdown"><span className="icon fa-clock-o"></span><CountDown id="countdown"></CountDown> until the day!</div>
                 </div>
