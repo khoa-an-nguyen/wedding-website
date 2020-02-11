@@ -39,7 +39,8 @@ const Footer = props => (
     <p className="copyright">
       &copy; Khoa Nguyen. 
       {/* Design: <a href="https://html5up.net">HTML5 UP</a>. */}
-      <div>Icons made by <a href="https://www.flaticon.com/authors/nikita-golubev" title="Nikita Golubev">Nikita Golubev</a> from <a href="https://www.flaticon.com/"     title="Flaticon">www.flaticon.com</a></div><div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/"     title="Flaticon">www.flaticon.com</a></div><div>Icons made by <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a> from <a href="https://www.flaticon.com/"     title="Flaticon">www.flaticon.com</a> <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a><a target="_blank" href="https://icons8.com/icons/set/maryland">Maryland icon</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a></div>
+      <div>Icons made by <a href="https://www.flaticon.com/authors/dinosoftlabs" title="DinosoftLabs">DinosoftLabs</a> from <a href="https://www.flaticon.com/"     title="Flaticon">www.flaticon.com</a></div><div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/"     title="Flaticon">www.flaticon.com</a></div>
+      <div><a target="_blank" href="https://icons8.com/icons/set/maryland">Maryland icon</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a></div>
     </p>
   </footer>
 )
