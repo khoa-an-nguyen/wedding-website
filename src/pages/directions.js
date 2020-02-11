@@ -3,7 +3,7 @@ import Img from "gatsby-image"
 import Layout from '../components/layout'
 import maryland from '../images/icons8-maryland-100.png'
 import virginia from '../images/icons8-virginia-100.png'
-
+import SubNavBar from '../components/SubPageNavBar'
 
 
 const TestPage = () => {
@@ -18,6 +18,7 @@ const TestPage = () => {
                 <header className="major">
                   <h2>Directions</h2>
                 </header>
+              <SubNavBar/>
               <div class="travel-wrapper">
               <div class="travel-section">
                 <div>
