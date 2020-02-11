@@ -6,9 +6,25 @@
 
 /* Type */
 
+#hero-text {
+	// margin-left: 1em;		
+	font-size: 3.5em;
+	font-family: 'adora bouton', cursive;
+	margin-bottom: 0em;
+	// margin: .6em;
+}
 	body {
 		background-color: _palette(bg);
 		color: _palette(fg);
+	}
+
+	nav {
+		font-family: _font(family-fixed);
+		// text-transform: uppercase;
+	}
+
+	.uppercase {
+		text-transform: uppercase;
 	}
 
 	body, input, select, textarea {
@@ -31,6 +47,9 @@
 
 		@include breakpoint(xxsmall) {
 			font-size: 11pt;
+			#hero-text {
+				font-size: 3em;
+			}
 		}
 	}
 
@@ -73,6 +92,7 @@
 	}
 
 	h1, h2, h3, h4, h5, h6 {
+		font-family: _font(family-fixed);
 		font-weight: _font(weight);
 		line-height: 1.5;
 		margin: 0 0 (_size(element-margin) * 0.35) 0;
@@ -91,6 +111,7 @@
 
 	h2 {
 		font-size: 1.5em;
+		text-transform: uppercase;
 	}
 
 	h3 {
@@ -113,6 +134,9 @@
 		h1 {
 			font-size: 2em;
 		}
+		#hero-text {
+				font-size: 3em;
+			}
 	}
 
 	sub {
@@ -220,13 +244,6 @@
 			color: #ffffff;
 			cursor: default;
 		}
-		#hero-text {
-			// margin-left: 1em;		
-			font-size: 3.5em;
-			font-family: 'adora bouton', cursive;
-			margin-bottom: 0em;
-			// margin: .6em;
-		}
 		#dukes {
 			font-family: impact;
 			color: gold;
@@ -247,9 +264,14 @@
 
 		#date-text {
 			// margin-left: 1em;
-			font-family: 'Raleway', sans-serif;
-			font-size: 2em;
+			font-family: _font(family-fixed);
+			font-size: 1.5em;
 			text-align: center;
+		}
+
+		.timeline-content {
+			font-size: 1em;
+			font-weight: unset;
 		}
 
 		#calendar-wrapper {
