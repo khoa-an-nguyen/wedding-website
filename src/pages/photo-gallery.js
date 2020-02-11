@@ -1,7 +1,8 @@
-import React from 'react'
-import Gallery from 'react-photo-gallery'
-import Layout from '../components/layout'
-import Helmet from 'react-helmet'
+import React from 'react';
+import Gallery from 'react-photo-gallery';
+import Layout from '../components/layout';
+import Helmet from 'react-helmet';
+import GalleryDynamicLoading from '../components/GalleryDynamicLoading'
 import SubNavBar from '../components/SubPageNavBar'
 import photo1 from '../images/gallery/landscape-captain-white.jpg'
 import photo2 from '../images/gallery/7e564ab5-50b0-4469-ab2d-c5fb698ba134_rw_1920.jpg'
@@ -56,8 +57,8 @@ export const photos = [
   },
   {
     src: photo3,
-    width: 4.5,
-    height: 3
+    width: 5,
+    height: 4
   },
   {
     src: photo4,
@@ -241,11 +242,10 @@ class PhotoGallery extends React.Component {
             <div className="spotlight">
               <div className="content">
                 <header className="major">
-                  <h2>Directions</h2>
-                  <h1>Photo Gallery</h1>
+                  <h2>Photo Gallery</h2>
                 <SubNavBar/>
                 </header>
-                <Gallery photos={photos} direction={"column"} />
+                <GalleryDynamicLoading photos={photos}/>
               </div>
             </div>
           </section>
