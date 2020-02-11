@@ -235,12 +235,21 @@ export const photos = [
 class PhotoGallery extends React.Component {
     render() {
       return (<Layout>
-        <Helmet title="Photo Gallery" />
-        <header id="header">
-        <h1>Photo Gallery</h1>
-        <SubNavBar/>
-        </header>
-        <Gallery photos={photos} direction={"column"} />
+        {/* <Helmet title="Photo Gallery" /> */}
+        <div id="main">
+          <section id="introd" className="main special">
+            <div className="spotlight">
+              <div className="content">
+                <header className="major">
+                  <h2>Directions</h2>
+                  <h1>Photo Gallery</h1>
+                <SubNavBar/>
+                </header>
+                <Gallery photos={photos} direction={"column"} />
+              </div>
+            </div>
+          </section>
+        </div>
         </Layout>)
     }}
 
