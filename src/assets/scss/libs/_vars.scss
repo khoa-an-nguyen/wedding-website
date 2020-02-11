@@ -19,19 +19,19 @@
 
 // Font.
 	$font: (
-		family:				('Source Sans Pro', Helvetica, sans-serif),
-		family-fixed:		('Courier New', monospace),
+		family:				('Raleway', Helvetica, sans-serif),
+		family-fixed:		('Montserrat', monospace),
 		cursive-font:		('scriptina', cursive),
 		weight:				300,
 		weight-bold:		400,
-		letter-spacing:		-0.025em
+		letter-spacing:		1px
 	);
 
 // Palette.
 	$palette: (
-		bg:					#585858,
+		bg:					#f8f8ff,
 		fg:					rgba(255,255,255,0.65),
-		fg-bold:			#ffffff,
+		fg-bold:			#f8f8ff,
 		fg-light:			rgba(255,255,255,0.5),
 		border:				rgba(255,255,255,0.35),
 		border-bg:			rgba(255,255,255,0.075),
@@ -39,8 +39,8 @@
 		border2-bg:			rgba(255,255,255,0.2),
 
 		invert: (
-			bg:				#ffffff,
-			bg-alt:			#f7f7f7,
+			bg:				#f8f8ff,
+			bg-alt:			#f8f8ff,
 			fg:				#636363,
 			fg-bold:		#636363,
 			fg-light:		rgba(99,99,99,0.25),
@@ -50,12 +50,12 @@
 			border2-bg:		rgba(222,222,222,0.5),
 		),
 
-		accent:				#888888,
-		accent1:			#8ccaf03f,
-		accent2:			#8ccaf018,
-		accent3:			#8ccaf018,
-		accent4:			#8ccaf018,
-		accent5:			#8ccaf018,
-		bg1:				#585858,
-		bg2:				#585858
+		accent:				#636363,
+		accent1:			#636363,
+		accent2:			#636363,
+		accent3:			#636363,
+		accent4:			#636363,
+		accent5:			#636363,
+		bg1:				#f2f3f4,
+		bg2:				#f2f3f4
 	);
