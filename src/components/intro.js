@@ -18,10 +18,10 @@ const Intro = ({ className }) => (
   <StaticQuery
     query={graphql`
       query {
-        desktop: file(relativePath: { eq: "portrait-alley.jpg" }) {
+        desktop: file(relativePath: { eq: "frontcover.jpg" }) {
           childImageSharp {
-            fluid(quality: 90, maxWidth: 1920) {
-              ...GatsbyImageSharpFluid_withWebp
+            fluid(quality: 90) {
+              ...GatsbyImageSharpFluid
             }
           }
         }
@@ -58,10 +58,13 @@ const Intro = ({ className }) => (
 // Figure out styled components for media queries?
 const StyledBackgroundSection = styled(Intro)`
   width: 100%;
-  height: 800px;
+  height: 43em;
   display: flex;
   align-items: flex-end;
   justify-content: center;
 `
+// @media (max-width: 736px) {
+//   height: 30em;
+// }
 
 export default StyledBackgroundSection
