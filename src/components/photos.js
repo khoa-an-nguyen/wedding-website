@@ -1,34 +1,33 @@
 import React, { Component } from 'react';
 import Gallery from 'react-photo-gallery'
 
-
-import photo1 from '../images/gallery/landscape-captain-white.jpg'
-import photo10 from '../images/gallery/V50A4004.jpg'
-import photo14 from '../images/gallery/V50A4038.jpg'
+import captainwhite from '../images/gallery/landscape-captain-white.jpg'
+import aodairock from '../images/gallery/V50A4004.jpg'
+import blossompic from '../images/gallery/V50A4038.jpg'
 
 export const photos = [
     {
-      src: photo1,
+      src: captainwhite,
       width: 4.5,
       height: 3
     },
     {
-      src: photo10,
+      src: aodairock,
       width: 3,
       height: 2
     },
     {
-        src: photo14,
+        src: blossompic,
         width: 1,
         height: 1.2
     },
     {
-        src: photo1,
+        src: captainwhite,
         width: 4.5,
         height: 3
       },
       {
-        src: photo10,
+        src: aodairock,
         width: 3,
         height: 2
       }

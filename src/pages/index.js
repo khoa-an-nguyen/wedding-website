@@ -59,14 +59,16 @@ class Index extends React.Component {
                   <header className="major">
                     <h2>Our Story</h2>
                   </header>
-                  <h3 class="cursive-text">How We Met</h3>
-                    <p>After 18 years of My-Anh traveling to over 7 countries, living the life of a “global nomad” (as she would say),  and well with Khoa… never straying from Northern Virginia, our paths crossed when we met in Harrisonburg, Virginia at James Madison University (<span id="dukes">Go Dukes!</span>).</p>
-                  <h3 class="cursive-text">Start of Being College Sweethearts</h3>
+                  <h3 className="cursive-text">How We Met</h3>
+                    <p>After 18 years of My-Anh traveling to over 7 countries, living the life of a “global nomad” (as she would say),  and well with Khoa… never straying from Northern Virginia, our paths crossed when we met in Harrisonburg, Virginia at James Madison University. 
+                      <br/>
+                      <span id="dukes-text-box"><span className="dukes-purple">GO DUKES!</span></span></p>                    
+                  <h3 className="cursive-text">Start of Being College Sweethearts</h3>
                     <p>On a sunny, breezy day of October 20th, 2012 in Downtown Charlottesville, Khoa asked My-Anh to be his girlfriend with a sharpie. napkin, and some <span>sloppy handwriting.</span></p>
-                  <h3 class="cursive-text">The Proposal</h3>
+                  <h3 className="cursive-text">The Proposal</h3>
                     <p>6 years, 1 month, 8 days later… Khoa finally mustered up the courage to propose to My-Anh in Sint Maarten (18°1'27.660"N 63°4'38.150”W).</p>
                   <p>We can't wait to celebrate with our friends, family, and loved ones on this next journey of our life! Let the countdown begin!</p>
-                <button class="special" id="countdown"><span class="icon fa-clock-o"></span><CountDown id="countdown"></CountDown> until the day!</button>
+                <div id="countdown"><span className="icon fa-clock-o"></span><CountDown id="countdown"></CountDown> until the day!</div>
                 </div>
               </div>
             </section>
@@ -79,28 +81,28 @@ class Index extends React.Component {
                 <div className="wedding-party-wrapper">
                   <ul className="features">
                   <li className="party">
-                      <span className="icon major"><img class="party-picture" src={party2} height="200" weight="200"></img></span>
+                      <span className="icon major"><img className="party-picture" src={party2} height="200" weight="200"></img></span>
                       <div>
                         <h3>My-Lien Bourdon</h3>
                         <h5 className="uppercase">Matron of Honor</h5>
                       </div>
                     </li>
                     <li className="party">
-                      <span className="icon major"><img class="party-picture" src={party4} height="200" weight="200"></img></span>
+                      <span className="icon major"><img className="party-picture" src={party4} height="200" weight="200"></img></span>
                       <div>
                         <h3>Stacy Learn</h3>
                         <h5 className="uppercase">Maid of Honor</h5>
                       </div>
                     </li>
                     <li className="party">
-                      <span className="icon major"><img class="party-picture" src={party1} height="200" weight="200"></img></span>
+                      <span className="icon major"><img className="party-picture" src={party1} height="200" weight="200"></img></span>
                       <div>
                         <h3>Beo Nguyen</h3>
                         <h5 className="uppercase">Best Man</h5>
                       </div>
                     </li>
                     <li className="party">
-                      <span className="icon major"><img class="party-picture" src={party3} height="200" weight="200"></img></span>
+                      <span className="icon major"><img className="party-picture" src={party3} height="200" weight="200"></img></span>
                       <div>
                         <h3>Kevin Cox</h3>
                         <h5 className="uppercase">Best Man</h5>

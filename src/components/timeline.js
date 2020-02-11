@@ -17,7 +17,7 @@ const Timeline = () => (
     <h3 className="vertical-timeline-element-title cursive-text">Ceremony</h3>
     <h4 className="vertical-timeline-element-subtitle">4:00PM - 5:00PM</h4>
     <p className="timeline-content">
-    Semi-Formal Attire! Ceremony will be on hard ground. Please arrive on time!
+    Semi-Formal Attire! Ceremony will be on hard ground behind our venue. Please arrive on time!
     </p>
   </VerticalTimelineElement>
   <VerticalTimelineElement
