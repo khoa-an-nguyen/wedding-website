@@ -2,7 +2,6 @@ import React from 'react'
 import Helmet from 'react-helmet'
 
 import Layout from '../components/layout'
-import HeaderGeneric from '../components/HeaderGeneric'
 import SubNavBar from '../components/SubPageNavBar'
 
 // temporary - pictures of party  - refactor later
@@ -30,13 +29,18 @@ class Generic extends React.Component {
 
     return (
       <Layout>
-        <Helmet title="The Wedding Party" />
-        <HeaderGeneric />
-        <SubNavBar/>
+        {/* <Helmet title="The Wedding Party" /> */}
+        {/* <HeaderGeneric /> */}
         <div id="main">
-          <section id="first" className="main special">
+          <section id="introd" className="main special">
             {/* <span className="image main"><img src={pic04} alt="" /></span> */}
-            <div>
+            <div className="spotlight">
+              <div className="content">
+                <header className="major">
+                  <h2>Wedding Party</h2>
+                  <p>Meet our friends and family who will be walking down the aisle with us!</p>
+                  <SubNavBar/>
+                  </header>
                 <div className="wedding-party-wrapper-page">
                   <h3 class="cursive-text party-text">Team Bride</h3>
                   <ul className="wedding-party">
@@ -158,6 +162,7 @@ class Generic extends React.Component {
                       </div>
                     </li>
                   </ul>
+                </div>
                 </div>
               </div>
           </section>
