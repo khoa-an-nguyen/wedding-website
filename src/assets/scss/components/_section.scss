@@ -44,6 +44,19 @@ article {
   address {
   }
 
+  .react-photo-gallery--gallery {
+    img {
+    }
+  }
+
+  #photo-wrapper {
+    margin-bottom: 1em;
+  }
+
+  .styles_faq-row-wrapper__3Hsch {
+    background-color: inherit;
+  }
+
   @include breakpoint(medium) {
     .travel-wrapper {
       display: flex;
@@ -73,7 +86,7 @@ header {
     margin-bottom: (_size(element-margin) * 1.5);
 
     h2 {
-      font-size: 2em;
+      font-size: 1.5em;
 
       &:after {
         display: block;
