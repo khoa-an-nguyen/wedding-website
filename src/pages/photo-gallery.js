@@ -18,6 +18,13 @@ import photo12 from '../images/gallery/V50A4018.jpg'
 import photo13 from '../images/gallery/V50A4036.jpg'
 import photo14 from '../images/gallery/V50A4038.jpg'
 import photo15 from '../images/gallery/V50A4040.jpg'
+import photo16 from '../images/gallery/2e49f567-f9a7-4a29-abf7-28d4a44f2f94_rw_1920.jpg'
+import photo17 from '../images/gallery/3dbf7777-0ff2-4f12-80b6-c8e9c98bffd2_rw_1920.jpg'
+import photo18 from '../images/gallery/8b95824c-c2d5-4dbe-a0bc-957b5f448a01_rw_1920.jpg'
+import photo19 from '../images/gallery/190cb676-b68c-45a3-89c4-09bd4619ff86_rw_1920.jpg'
+import photo20 from '../images/gallery/1347a03d-c49e-436e-9ef6-2f60f1915399_rw_1920.jpg'
+import photo21 from '../images/gallery/c57d0521-dda0-4b86-abb0-18015f923446_rw_1920.jpg'
+import photo22 from '../images/gallery/e48b64aa-0923-4c8e-86eb-df1e33a713fb_rw_1920.jpg'
 
 export const photos = [
   {
@@ -92,19 +99,45 @@ export const photos = [
   },
   {
     src: photo15,
+    width: 3,
+    height: 4.5
+  },
+  {
+    src: photo16,
     width: 4,
     height: 3
   },
   {
-    src: "https://source.unsplash.com/A-fubu9QJxE/800x533",
-    width: 4,
-    height: 3
+    src: photo17,
+    width: 3,
+    height: 4.5
   },
   {
-    src: "https://source.unsplash.com/5P91SF0zNsI/740x494",
+    src: photo18,
+    width: 3,
+    height: 4.5
+  },
+  {
+    src: photo19,
+    width: 3,
+    height: 4.5
+  },
+  {
+    src: photo20,
+    width: 3,
+    height: 4.5
+  },
+  {
+    src: photo21,
+    width: 3,
+    height: 4.5
+  },
+  {
+    src: photo22,
     width: 4,
     height: 3
   }
+
 ];
 
 class PhotoGallery extends React.Component {
