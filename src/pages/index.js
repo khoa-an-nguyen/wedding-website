@@ -13,6 +13,8 @@ import StyledBackgroundSectionThree from '../components/BackgroundSectionThree'
 import CountDown from '../components/CountDown'
 import Faqs from '../components/Faq'
 import shadowcreeklogo from '../images/shadowcreek-logo.png'
+import Photos from '../components/photos'
+
 // TODO
 // temporary - will refactor later 
 import party1 from '../images/party/beo.jpeg'
@@ -69,15 +71,6 @@ class Index extends React.Component {
               </div>
             </section>
             <StyledBackgroundSection></StyledBackgroundSection>
-            {/* <section className="main">
-            <header className="major">
-                <h2>Some Important Events Between Us</h2>
-              </header>
-              <div>
-                <Timeline />
-              </div>
-            </section> */}
-
             <section id="first" className="main special">
               <header className="major">
                 <h2>The Party</h2>
@@ -85,32 +78,32 @@ class Index extends React.Component {
               <div>
                 <div className="wedding-party-wrapper">
                   <ul className="features">
-                  <li className="groom">
+                  <li className="party">
                       <span className="icon major"><img class="party-picture" src={party2} height="200" weight="200"></img></span>
                       <div>
                         <h3>My-Lien Bourdon</h3>
-                        <h5>Matron of Honor</h5>
+                        <h5 className="uppercase">Matron of Honor</h5>
                       </div>
                     </li>
-                    <li className="groom">
+                    <li className="party">
                       <span className="icon major"><img class="party-picture" src={party4} height="200" weight="200"></img></span>
                       <div>
                         <h3>Stacy Learn</h3>
-                        <h5>Maid of Honor</h5>
+                        <h5 className="uppercase">Maid of Honor</h5>
                       </div>
                     </li>
-                    <li className="groom">
+                    <li className="party">
                       <span className="icon major"><img class="party-picture" src={party1} height="200" weight="200"></img></span>
                       <div>
                         <h3>Beo Nguyen</h3>
-                        <h5>Best Man</h5>
+                        <h5 className="uppercase">Best Man</h5>
                       </div>
                     </li>
-                    <li className="groom">
+                    <li className="party">
                       <span className="icon major"><img class="party-picture" src={party3} height="200" weight="200"></img></span>
                       <div>
                         <h3>Kevin Cox</h3>
-                        <h5>Best Man</h5>
+                        <h5 className="uppercase">Best Man</h5>
                       </div>
                     </li>
                   </ul>
@@ -131,9 +124,10 @@ class Index extends React.Component {
             <section id="second" className="main special">
               <header className="major">
                 <h2>Schedule</h2>
-                  <p>
+                  <Timeline />
+                  {/* <p>
                     We are currently finalizing a few things! Our Schedule is coming soon! Stay tuned!
-                  </p>
+                  </p> */}
               </header>
               <footer className="major">
               </footer>
@@ -168,30 +162,46 @@ class Index extends React.Component {
             <section id="accommodations" className="main special">
               <header className="major">
                 <h2>Accommodations</h2>
-                <p>
-                  We recommend staying at around Old Town Leesburg or even booking an AirBnb around the area!
+              </header>
+              <p>
+                  Our recommendation is to stay around Old Town Leesburg or even booking an AirBnb around the area!
                 <br />
+                We are currently looking for the best hotel possible to room block so stay tuned for updates as the date approaches!
                   <br />
                   Please let us know if you're booking an Airbnb!
               </p>
-              </header>
               <ul className="actions">
                 <li>
-                  <a href="https://www.marriott.com" className="button special">
+                  <a href="https://www.marriott.com" className="button">
                     Leesburg Marriott
                   </a>
                 </li>
                 <li>
-                  <a href="https://www.airbnb.com" className="button special">
+                  <a href="https://www.airbnb.com" className="button">
                     AirBnb
                   </a>
                 </li>
                 <li>
-                  <a href="https://www.salamanderresort.com/" className="button special">
+                  <a href="https://www.salamanderresort.com/" className="button">
                     Salamander Resort
                   </a>
                 </li>
               </ul>
+            </section>
+            <section id="photo" className="main special">
+              <div className="content">
+                    <header className="major">
+                      <h2>Photos</h2>
+                    </header>
+                <Photos/>
+                <ul className="actions">
+                    <li>
+                      <Link to="/photo-gallery" className="button">
+                        See More Photos
+                    </Link>
+                    </li>
+                  </ul>
+                </div>
             </section>
             <section id="faqs" className="main special">
               <header className="major">
