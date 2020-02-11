@@ -42,9 +42,9 @@ const Intro = ({ className }) => (
             opacity= "0.6"
           >
             <div>
-              <h1 id="hero-text" class="main-image-text">My-Anh & Khoa</h1>
+              <h1 id="hero-text" className="main-image-text">My-Anh & Khoa</h1>
               <div>
-              <h2 id="date-text" class="main-image-text">Friday, October 2, 2020</h2>
+              <h2 id="date-text" className="main-image-text">Friday, October 2, 2020</h2>
               <h5 id="calendar-wrapper"><AddToCalendar event={event} buttonLabel="Save the Date!" buttonTemplate={icon} /></h5>
               </div>
             </div>
