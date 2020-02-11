@@ -16,7 +16,7 @@ const Footer = props => (
         </dd>
       </dl>
       <ul className="icons">
-        <li>
+        {/* <li>
           <a
             href="https://twitter.com/huntaroSan"
             className="icon fa-twitter alt"
@@ -33,7 +33,7 @@ const Footer = props => (
           <a href="https://codebushi.com" className="icon fa-instagram alt">
             <span className="label">Instagram</span>
           </a>
-        </li>
+        </li> */}
       </ul>
     </section>
     <div className="copyright">
