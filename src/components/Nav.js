@@ -5,7 +5,7 @@ import Scroll from './Scroll'
 const Nav = (props) => (
     <nav id="nav" className={props.sticky ? 'alt' : ''}>
         {/* <div><span id="header-text" class="icon">October 2, 2020 Shadow Creek</span></div> */}
-        <Scrollspy items={['intro', 'first', 'second', 'location', 'accommodations', 'faqs']} currentClassName="is-active" offset={-300}>
+        <Scrollspy items={['intro', 'intro', 'first', 'second', 'location', 'accommodations', 'photo', 'faqs']} currentClassName="is-active" offset={-300}>
             <li>
                 <Scroll type="id" element="intro">
                     <div>
@@ -15,40 +15,40 @@ const Nav = (props) => (
             </li>
             <li>
                 <Scroll type="id" element="intro">
-                    <a href="#">Home</a>
+                    <a class="nav-element" href="#">Home</a>
                 </Scroll>
             </li>
             <li>
                 <Scroll type="id" element="first">
-                    <a href="#">The Party</a>
+                    <a class="nav-element" href="#">The Party</a>
                 </Scroll>
             </li>
             <li>
                 <Scroll type="id" element="second">
-                    <a href="#">Schedule</a>
+                    <a class="nav-element" href="#">Schedule</a>
                 </Scroll>
             </li>
             {/* Maybe create into own page and not section w/ smooth scroll? */}
             <li>
                 <Scroll type="id" element="location">
-                    <a href="#">Location</a>
+                    <a class="nav-element" href="#">Location</a>
                 </Scroll>
             </li>
             <li>
                 <Scroll type="id" element="accommodations">
-                    <a href="#">Accommodations</a>
+                    <a class="nav-element" href="#">Accommodations</a>
+                </Scroll>
+            </li>
+            <li>
+                <Scroll type="id" element="photo">
+                    <a class="nav-element" href="#">Photos</a>
                 </Scroll>
             </li>
             <li>
                 <Scroll type="id" element="faqs">
-                    <a href="#">FAQS</a>
+                    <a class="nav-element" href="#">FAQS</a>
                 </Scroll>
             </li>
-            {/* <li>
-            <Scroll type="id" element="faqs">
-                <a id="nav-date" href="#">10-02-20 Shadow Creek</a>
-            </Scroll>    
-            </li> */}
         </Scrollspy>
     </nav>
 )
