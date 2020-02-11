@@ -40,8 +40,13 @@ article {
     }
     #location-address {
       margin-bottom: 1em;
+      text-transform: uppercase;
+      font-weight: 800;
     }
+
   address {
+    text-transform: uppercase;
+    letter-spacing: 2px;
   }
 
   .react-photo-gallery--gallery {
