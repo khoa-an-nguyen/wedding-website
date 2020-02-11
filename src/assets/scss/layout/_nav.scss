@@ -23,6 +23,14 @@
 		border-top-right-radius: _size(border-radius-main);
 		cursor: default;
 		text-align: center;
+		overflow:auto;
+
+		.nav-element {
+			text-transform: uppercase;
+			letter-spacing: 2.3px;
+			font-weight: 300;
+			font-size: .7em;
+		}
 		ul {
 			display: grid;
 			align-items: center;
@@ -101,14 +109,44 @@
 				li {
 					margin: 0 0.175em;
 
-					a {
-						font-size: 0.9em;
+					.nav-element {
+						font-size: 0.6em;
 					}
 				}
 			}
 
 			#logo-text {
 				font-size: 1em;
+			}
+		}
+
+		@include breakpoint(large) {
+			ul {
+				li {
+					margin: 0 0.175em;
+
+					.nav-element {
+						font-size: 0.65em;
+					}
+				}
+			}
+			#logo-text {
+				font-size: 1.5em;			
+			}
+		}
+
+		@include breakpoint(medium) {
+			ul {
+				li {
+					margin: 0 0.175em;
+
+					.nav-element {
+						font-size: 0.55em;
+					}
+				}
+			}
+			#logo-text {
+				font-size: 1.2em;			
 			}
 		}
 
@@ -119,4 +157,8 @@
 				padding-top: 0;
 			}
 		}
+	}
+
+	#sub-nav {
+		
 	}
