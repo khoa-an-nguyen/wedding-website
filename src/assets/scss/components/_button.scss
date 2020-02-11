@@ -10,7 +10,7 @@
 	input[type="reset"],
 	input[type="button"],
 	button,
-	.button {
+	.button, .react-add-to-calendar__button {
 		@include vendor('appearance', 'none');
 		@include vendor('transition', (
 			'background-color #{_duration(transition)} ease-in-out',
@@ -75,17 +75,6 @@
 			&:hover {
 				background-color: _palette($p, border-bg);
 				// font-size: 1.05em;
-			}
-
-			&#countdown {
-				font-size: 1.25em;
-				&:hover {
-					font-size: 1.15em;
-				}
-
-				&:focus {
-					outline: 0;
-				}
 			}
 
 			&:active {
