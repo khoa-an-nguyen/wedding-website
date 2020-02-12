@@ -6,6 +6,7 @@
 
 /* Features */
 
+
 .wedding-party {
     @include vendor('display', 'flex');
     @include vendor('flex-wrap', 'wrap');
@@ -91,3 +92,28 @@
         }
     }
 }
+
+.picture-wrapper {
+    text-align: center;
+    height: 50%;
+}
+
+.party-main-pic {
+    width: 100%;
+    height: 28em;
+    margin: auto;
+}
+@include breakpoint(medium) {
+    .party-main-pic {
+        width: 100%;
+        margin: auto;
+    }
+}
+
+@include breakpoint(small) {
+    .party-main-pic {
+        width: 100%;
+        margin: auto;
+    }
+}
+

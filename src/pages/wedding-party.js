@@ -1,6 +1,6 @@
 import React from 'react'
 import Helmet from 'react-helmet'
-
+import Img from "gatsby-image"
 import Layout from '../components/layout'
 import SubNavBar from '../components/SubPageNavBar'
 
@@ -23,17 +23,23 @@ import groom7 from '../images/party/tuan.jpg'
 import groom8 from '../images/party/justin.jpeg'
 
 
+export const query = graphql`
+  query {
+    file(relativePath: { eq: "meettheparty.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 1920) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+  }
+`
 
-class Generic extends React.Component {
-  render() {
-
+export default ({data}) => {
     return (
       <Layout>
-        {/* <Helmet title="The Wedding Party" /> */}
-        {/* <HeaderGeneric /> */}
         <div id="main">
           <section id="introd" className="main special">
-            {/* <span className="image main"><img src={pic04} alt="" /></span> */}
             <div className="spotlight">
               <div className="content">
                 <header className="major">
@@ -41,6 +47,15 @@ class Generic extends React.Component {
                   <p>Meet our friends and family who will be walking down the aisle with us!</p>
                   <SubNavBar/>
                   </header>
+                  <div className="picture-wrapper">
+                  <Img
+                  fluid={data.file.childImageSharp.fluid}
+                  objectFit="cover"
+                  objectPosition="50% 50%"
+                  alt=""
+                  className="party-main-pic"
+                  />
+                  </div>
                 <div className="wedding-party-wrapper-page">
                   <h3 class="cursive-text party-text">Team Bride</h3>
                   <ul className="wedding-party">
@@ -170,6 +185,4 @@ class Generic extends React.Component {
       </Layout>
     )
   }
-}
 
-export default Generic

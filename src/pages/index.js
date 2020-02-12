@@ -142,7 +142,7 @@ class Index extends React.Component {
               <div>
                 <img src={shadowcreeklogo} alt=""></img>
                 <div id="location-address">
-                  <h3>Shadow Creek</h3>
+                  {/* <h3>Shadow Creek</h3> */}
                   <address>18090 Silcott Springs Road</address>
                   <address>Purcellville, Virginia 20132</address>
                 </div>
