@@ -7,6 +7,7 @@ function GalleryDynamicLoading({ photos }) {
   const [pageNum, setPageNum] = useState(1);
   const [loadedAll, setLoadedAll] = useState(false);
   const TOTAL_PAGES = 6;
+  
   const loadMorePhotos = debounce(() => {
     if (pageNum > TOTAL_PAGES) {
       setLoadedAll(true);
@@ -16,7 +17,7 @@ function GalleryDynamicLoading({ photos }) {
     setImages(images.concat(photos.slice(images.length, images.length + 6)));
     setPageNum(pageNum + 1);
   }, 200);
-
+  
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);

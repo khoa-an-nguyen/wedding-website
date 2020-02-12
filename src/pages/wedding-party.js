@@ -21,6 +21,7 @@ import groom5 from '../images/party/dara.jpeg'
 import groom6 from '../images/party/daniel.jpg'
 import groom7 from '../images/party/tuan.jpg'
 import groom8 from '../images/party/justin.jpeg'
+import ringbear from '../images/party/jack2.png'
 
 
 export const query = graphql`
@@ -178,8 +179,21 @@ export default ({data}) => {
                     </li>
                   </ul>
                 </div>
+                <div className="wedding-party-wrapper-page">
+                <h3 class="cursive-text party-text">Ring Bearer</h3>
+                  <ul className="features">
+                  <li className="party">
+                      <span className="icon party"><img className="ring-bearer-picture" src={ringbear} height="80" width="80" data-rotate="90"></img></span>
+                      <div>
+                        <h3>Jack Leo Bourdon</h3>
+                        <h5 className="uppercase">Ring Bearer</h5>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
                 </div>
               </div>
+              
           </section>
         </div>
       </Layout>
