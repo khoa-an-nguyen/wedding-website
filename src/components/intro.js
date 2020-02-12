@@ -18,10 +18,17 @@ const Intro = ({ className }) => (
   <StaticQuery
     query={graphql`
       query {
-        desktop: file(relativePath: { eq: "frontcover.jpg" }) {
+        desktop: file(relativePath: { eq: "frontcover-desktop.jpg" }) {
           childImageSharp {
-            fluid(quality: 90) {
-              ...GatsbyImageSharpFluid
+            fluid(quality: 100, maxWidth: 4160) {
+              ...GatsbyImageSharpFluid_withWebp
+            }
+          }
+        }
+        mobile: file(relativePath: { eq: "frontcover-mobile.jpg" }) {
+          childImageSharp {
+            fluid(quality: 100, maxWidth: 490) {
+              ...GatsbyImageSharpFluid_withWebp
             }
           }
         }
@@ -29,13 +36,20 @@ const Intro = ({ className }) => (
     `}
     render={data => {
       // Set ImageData.
-      const imageData = data.desktop.childImageSharp.fluid
+      const imageData = data.desktop.childImageSharp.fluid;
+      const sources = [
+        data.mobile.childImageSharp.fluid,
+        {
+          ...data.desktop.childImageSharp.fluid,
+          media: `(min-width: 800px)`
+        }
+      ]
       return (
         <section>
           <BackgroundImage
             Tag="section"
             className={className}
-            fluid={imageData}
+            fluid={sources}
             backgroundColor={`#000000`}
             classId="testtttt"
             id="hero-section"
