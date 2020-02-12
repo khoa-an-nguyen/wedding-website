@@ -59,6 +59,12 @@
                 min-height: 90px;
             }
         }
+        
+        @include breakpoint(medium) {
+            &.party-member {
+                justify-content: flex-start; /* optional */
+            }
+        }
 
 
         div {
@@ -73,7 +79,9 @@
     @include breakpoint(medium) {
         li {
             width: calc(#{(100% / 1)} - #{5em});
-
+        }
+        .wedding-party-wrapper-page {
+            width: 100%;
         }
     }
 
@@ -86,6 +94,8 @@
             margin-left: 0;
             margin-top: _size(element-margin);
         }
+
+ 
     }
 }
 
@@ -104,6 +114,9 @@
         width: 100%;
         margin: auto;
     }
+    .wedding-party-wrapper-page {
+        width: 100%;
+    }
 }
 
 @include breakpoint(small) {
@@ -111,11 +124,20 @@
         width: 100%;
         margin: auto;
     }
+    section {
+        .wedding-party-wrapper-page {
+            width: 100%;
+        }
+    }
 }
 
 .wedding-party-wrapper-page {
     h3 {
         margin-bottom: .1em;
     }
+}
+
+.ring-bearer-picture {
+    border-radius: 50%;
 }
 
