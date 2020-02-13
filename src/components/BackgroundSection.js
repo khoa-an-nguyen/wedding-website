@@ -14,31 +14,40 @@ const BackgroundSectionOne = ({ className }) => (
             }
           }
         }
+        mobile: file(relativePath: { eq: "landscape-hand-mobile.jpg" }) {
+          childImageSharp {
+            fluid(quality: 100, maxWidth: 480) {
+              ...GatsbyImageSharpFluid_withWebp
+            }
+          }
+        }
       }
     `}
     render={data => {
       // Set ImageData.
-      const imageData = data.desktop.childImageSharp.fluid
+      const sources = [
+        data.mobile.childImageSharp.fluid,
+        {
+          ...data.desktop.childImageSharp.fluid,
+          media: `(min-width: 800px)`
+        }
+      ]
       return (
+        <div>
         <BackgroundImage
           Tag="section"
           className={className}
-          fluid={imageData}
-          backgroundColor={`#040e18`}
+          fluid={sources}
         >
         </BackgroundImage>
+        </div>
       )
-    }}
-  />
+      }}/>
 )
 
 const StyledBackgroundSection = styled(BackgroundSectionOne)`
   width: 100%;
-  height: 500px;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  height: 400px;
 `
 
 export default StyledBackgroundSection

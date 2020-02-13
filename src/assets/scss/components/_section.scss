@@ -152,10 +152,6 @@ footer {
   background: rgba(0, 0, 0, 1);
 }
 
-.gatsby-background-image-testtttt:before {
-  opacity: 0.8 !important;
-}
-
 @include breakpoint(small) {
   header {
     &.major {

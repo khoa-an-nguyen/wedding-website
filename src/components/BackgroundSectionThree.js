@@ -24,7 +24,6 @@ const BackgroundSectionThree = ({ className }) => (
           Tag="section"
           className={className}
           fluid={imageData}
-          backgroundColor={`#040e18`}
         >
         </BackgroundImage>
       )
@@ -35,10 +34,6 @@ const BackgroundSectionThree = ({ className }) => (
 const StyledBackgroundSectionThree = styled(BackgroundSectionThree)`
   width: 100%;
   height: 500px;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
 `
 
 export default StyledBackgroundSectionThree
