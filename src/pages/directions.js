@@ -12,7 +12,7 @@ const TestPage = () => {
       <Layout>
         {/* <Header /> */}
         <div id="main">
-          <section id="introd" className="main special">
+          <section className="main special">
             <div className="spotlight">
               <div className="content">
                 <header className="major">

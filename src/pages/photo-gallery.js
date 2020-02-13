@@ -238,7 +238,7 @@ class PhotoGallery extends React.Component {
       return (<Layout>
         {/* <Helmet title="Photo Gallery" /> */}
         <div id="main">
-          <section id="introd" className="main special">
+          <section className="main special">
             <div className="spotlight">
               <div className="content">
                 <header className="major">
