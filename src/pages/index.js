@@ -42,7 +42,6 @@ class Index extends React.Component {
 
   render() {
     return (
-      <div>
         <Layout>
           <Helmet title="#TheNewLeNguyens" />
           {/* <Header /> */}
@@ -55,8 +54,7 @@ class Index extends React.Component {
           <Nav sticky={this.state.stickyNav} />
           <div id="main">
               <Intro />
-            <section id="introd" className="main special">
-              <LazyLoad>
+            <section className="main special">
                 <div className="spotlight">
                   <div className="content">
                     <header className="major">
@@ -74,14 +72,12 @@ class Index extends React.Component {
                   {/* <div id="countdown"><span className="icon fa-clock-o"></span><CountDown id="countdown"></CountDown> until the day!</div> */}
                   </div>
                 </div>
-              </LazyLoad>
             </section>
             <StyledBackgroundSection></StyledBackgroundSection>
             <section id="first" className="main special">
               <header className="major">
                 <h2>The Party</h2>
               </header>
-              <LazyLoad>
                 <div>
                   <div className="wedding-party-wrapper">
                     <ul className="features">
@@ -116,7 +112,6 @@ class Index extends React.Component {
                     </ul>
                   </div>
                 </div>
-              </LazyLoad>
               <footer className="major">
               <ul className="actions">
                   <li>
@@ -127,11 +122,11 @@ class Index extends React.Component {
                 </ul>
               </footer>
             </section>
-            <LazyLoad><StyledBackgroundSectionTwo></StyledBackgroundSectionTwo></LazyLoad>
+            <StyledBackgroundSectionTwo></StyledBackgroundSectionTwo>
               <section id="second" className="main special">
                 <header className="major">
                   <h2>Schedule</h2>
-                    <LazyLoad><Timeline /></LazyLoad>
+                    <Timeline />
                     {/* <p>
                       We are currently finalizing a few things! Our Schedule is coming soon! Stay tuned!
                     </p> */}
@@ -139,12 +134,10 @@ class Index extends React.Component {
                 <footer className="major">
                 </footer>
               </section>
-            <LazyLoad><StyledBackgroundSectionThree></StyledBackgroundSectionThree></LazyLoad>
               <section id="location" className="main special">
                 <header className="major">
                   <h2>Location</h2>
                 </header>
-                <LazyLoad>
                   <div>
                     <img src={shadowcreeklogo} alt=""></img>
                     <div id="location-address">
@@ -161,15 +154,14 @@ class Index extends React.Component {
                     </li>
                     </ul>
                   </div>
-                </LazyLoad>
                 <footer className="major">
+                  <StyledBackgroundSectionThree></StyledBackgroundSectionThree>
                 </footer>
               </section>
               <section id="accommodations" className="main special">
                 <header className="major">
                   <h2>Accommodations</h2>
                 </header>
-                <LazyLoad>
                   <p>
                       Our recommendation is to stay around Old Town Leesburg or even booking an AirBnb around the area!
                     <br />
@@ -194,10 +186,8 @@ class Index extends React.Component {
                       </a>
                     </li>
                   </ul>
-                </LazyLoad>
               </section>
               <section id="photo" className="main special">
-                <LazyLoad>
                   <div className="content">
                         <header className="major">
                           <h2>Photos</h2>
@@ -211,7 +201,6 @@ class Index extends React.Component {
                         </li>
                       </ul>
                     </div>
-                  </LazyLoad>
               </section>
               <section id="faqs" className="main special">
                 <header className="major">
@@ -223,7 +212,6 @@ class Index extends React.Component {
               </section>
           </div>
         </Layout>
-      </div>
     )
   }
 }
