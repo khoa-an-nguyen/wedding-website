@@ -11,12 +11,14 @@
 
 @font-face {
     font-family: 'nostalgia';
-    src: url('../fonts/NostalgiaScript-Regular.ttf');
+	src: url('../fonts/NostalgiaScript-Regular.ttf');
+	font-display: swap;
 }
 
 @font-face {
 	font-family: 'adora bouton';
 	src: url('../fonts/FontsFree-Net-adorabouton.ttf');
+	font-display: swap;
 }
 
 	@include skel-breakpoints((
