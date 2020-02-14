@@ -129,9 +129,6 @@ class Index extends React.Component {
                 <header className="major">
                   <h2>Schedule</h2>
                     <Timeline />
-                    {/* <p>
-                      We are currently finalizing a few things! Our Schedule is coming soon! Stay tuned!
-                    </p> */}
                 </header>
                 <footer className="major">
                 </footer>
