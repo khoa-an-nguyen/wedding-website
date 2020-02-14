@@ -14,14 +14,7 @@ import SimpleCountdown from '../components/SimpleCountdown'
 import Faqs from '../components/Faq'
 import shadowcreeklogo from '../images/shadowcreek-logo.png'
 import GallerySnippet from '../components/GallerySnippet';
-
-
-// TODO
-// temporary - will refactor later 
-import party1 from '../images/party/beo.jpeg'
-import party2 from '../images/party/mimi.jpg'
-import party3 from '../images/party/kevin.jpg'
-import party4 from '../images/party/stacy.jpeg'
+import MainParty from '../components/MainParty'
 
 class Index extends React.Component {
   constructor(props) {
@@ -81,38 +74,7 @@ class Index extends React.Component {
                 <h2>The Party</h2>
               </header>
                 <div>
-                  <div className="wedding-party-wrapper">
-                    <ul className="features">
-                    <li className="party">
-                        <span className="icon major"><img className="party-picture" src={party2} height="200" weight="200"></img></span>
-                        <div>
-                          <h3>My-Lien Bourdon</h3>
-                          <h5 className="uppercase">Matron of Honor</h5>
-                        </div>
-                      </li>
-                      <li className="party">
-                        <span className="icon major"><img className="party-picture" src={party4} height="200" weight="200"></img></span>
-                        <div>
-                          <h3>Stacy Learn</h3>
-                          <h5 className="uppercase">Maid of Honor</h5>
-                        </div>
-                      </li>
-                      <li className="party">
-                        <span className="icon major"><img className="party-picture" src={party1} height="200" weight="200"></img></span>
-                        <div>
-                          <h3>Beo Nguyen</h3>
-                          <h5 className="uppercase">Best Man</h5>
-                        </div>
-                      </li>
-                      <li className="party">
-                        <span className="icon major"><img className="party-picture" src={party3} height="200" weight="200"></img></span>
-                        <div>
-                          <h3>Kevin Cox</h3>
-                          <h5 className="uppercase">Best Man</h5>
-                        </div>
-                      </li>
-                    </ul>
-                  </div>
+                  <MainParty />
                 </div>
               <footer className="major">
               <ul className="actions">
