@@ -206,7 +206,7 @@ class Index extends React.Component {
                 <header className="major">
                   <h2>Frequently Asked Questions</h2>
                 </header>
-                {/* <Faqs></Faqs> */}
+                {typeof window !== 'undefined' && Faqs && <Faqs></Faqs>}
                 <footer className="major">
                 </footer>
               </section>

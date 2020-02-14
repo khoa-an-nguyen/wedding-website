@@ -36,5 +36,6 @@ module.exports = {
         bucketName: "www.thenewlenguyens.com",
       },
     },
+    `react-faq-component`,
   ],
 }
