@@ -168,7 +168,8 @@ class Index extends React.Component {
                       <br />
                       <em>Also - Please let us know if you're booking an Airbnb!</em>
                   </p>
-                  <ul className="actions">
+                  {/* Remove temporarily after finalizing room blocks */}
+                  {/* <ul className="actions">
                     <li>
                       <a href="https://www.marriott.com" className="button">
                         Leesburg Marriott
@@ -184,7 +185,7 @@ class Index extends React.Component {
                         Salamander Resort
                       </a>
                     </li>
-                  </ul>
+                  </ul> */}
               </section>
               <section id="photo" className="main special">
                   <div className="content">
