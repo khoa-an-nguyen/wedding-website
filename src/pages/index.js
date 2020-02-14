@@ -14,7 +14,6 @@ import StyledBackgroundSectionThree from '../components/BackgroundSectionThree'
 import Faqs from '../components/Faq'
 import shadowcreeklogo from '../images/shadowcreek-logo.png'
 import Photos from '../components/photos'
-import LazyLoadComponent from 'react-lazy-load-image-component'
 
 
 // TODO
@@ -165,9 +164,9 @@ class Index extends React.Component {
                   <p>
                       Our recommendation is to stay around Old Town Leesburg or even booking an AirBnb around the area!
                     <br />
-                    We are currently looking for the best hotel possible to room block so stay tuned for updates as the date approaches!
+                    <em>We are currently looking for the best hotel possible to room block so stay tuned for updates as the date approaches!</em>
                       <br />
-                      Please let us know if you're booking an Airbnb!
+                      <em>Also - Please let us know if you're booking an Airbnb!</em>
                   </p>
                   <ul className="actions">
                     <li>
