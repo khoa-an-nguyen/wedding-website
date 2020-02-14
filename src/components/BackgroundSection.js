@@ -10,14 +10,14 @@ const BackgroundSectionOne = ({ className }) => (
         desktop: file(relativePath: { eq: "landscape-hand.jpg" }) {
           childImageSharp {
             fluid(quality: 90, maxWidth: 1920) {
-              ...GatsbyImageSharpFluid_withWebp
+              ...GatsbyImageSharpFluid_tracedSVG
             }
           }
         }
         mobile: file(relativePath: { eq: "landscape-hand-mobile.jpg" }) {
           childImageSharp {
             fluid(quality: 100, maxWidth: 480) {
-              ...GatsbyImageSharpFluid_withWebp
+              ...GatsbyImageSharpFluid_tracedSVG
             }
           }
         }
