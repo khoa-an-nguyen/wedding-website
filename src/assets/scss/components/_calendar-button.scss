@@ -9,13 +9,14 @@
     position: relative;
     display: inline-block;
     -webkit-font-smoothing: antialiased;
+    font-size: .8em;
     .react-add-to-calendar {
         zoom: 1;
         cursor: pointer;
         @mixin color-button($p: null) {
 
         &:hover {
-            background-color: _palette($p, border-bg);
+            background-color: #7a7c80 !important;
         }
         &:active {
             background-color: _palette($p, border2-bg);
