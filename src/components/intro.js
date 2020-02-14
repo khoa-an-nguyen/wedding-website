@@ -41,7 +41,7 @@ const Intro = ({ className }) => (
         data.mobile.childImageSharp.fluid,
         {
           ...data.desktop.childImageSharp.fluid,
-          media: `(min-width: 800px)`
+          media: `(min-width: 912px)`
         }
       ]
       return (
@@ -70,10 +70,16 @@ const Intro = ({ className }) => (
 // Figure out styled components for media queries?
 const StyledBackgroundSection = styled(Intro)`
   width: 100%;
-  height: 38em;
+  height: 40em;
   display: flex;
   align-items: flex-end;
   justify-content: center;
+  @media (max-width: 980px) {
+    height: 45em;
+  }
+  @media (max-width: 736px) {
+  height: 41em;
+  }
 `
 // @media (max-width: 736px) {
 //   height: 30em;
