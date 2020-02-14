@@ -10,10 +10,10 @@ import Intro from '../components/intro'
 import StyledBackgroundSection from '../components/BackgroundSection'
 import StyledBackgroundSectionTwo from '../components/BackgroundSectionTwo'
 import StyledBackgroundSectionThree from '../components/BackgroundSectionThree'
-// import CountDown from '../components/CountDown'
+import SimpleCountdown from '../components/SimpleCountdown'
 import Faqs from '../components/Faq'
 import shadowcreeklogo from '../images/shadowcreek-logo.png'
-import Photos from '../components/photos'
+import Photos from '../components/photos';
 
 
 // TODO
@@ -68,7 +68,10 @@ class Index extends React.Component {
                     <h3 className="cursive-text">The Proposal</h3>
                       <p>6 years, 1 month, 8 days later at noon...<br />Khoa finally mustered up the courage to propose to My-Anh in Sint Maarten at <code>18°1'27.660"N 63°4'38.150”W</code>.</p>
                     <p>And now... We can't wait to celebrate with our friends, family, and loved ones on this next journey of our life! <br />Let the countdown begin!</p>
-                  {/* <div id="countdown"><span className="icon fa-clock-o"></span><CountDown id="countdown"></CountDown> until the day!</div> */}
+                    <SimpleCountdown 
+                    timeTillDate="10 02 2020, 6:00 pm" 
+                    timeFormat="MM DD YYYY, h:mm a" 
+                    />
                   </div>
                 </div>
             </section>
