@@ -14,7 +14,7 @@ import StyledBackgroundSectionThree from '../components/BackgroundSectionThree'
 import Faqs from '../components/Faq'
 import shadowcreeklogo from '../images/shadowcreek-logo.png'
 import Photos from '../components/photos'
-import LazyLoad from 'react-lazyload';
+import LazyLoadComponent from 'react-lazy-load-image-component'
 
 
 // TODO

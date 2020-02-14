@@ -47,11 +47,9 @@ const Intro = ({ className }) => (
       return (
         <section>
           <BackgroundImage
-            Tag="section"
+            Tag="div"
             className={className}
             fluid={sources}
-            backgroundColor={`#000000`}
-            classId="testtttt"
             id="hero-section"
             opacity= "0.6"
           >
