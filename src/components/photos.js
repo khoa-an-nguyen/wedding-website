@@ -8,6 +8,9 @@ import pic1 from '../images/gallery/7f66c551-6769-4423-a43b-70d313b6c023_rw_1920
 import pic2 from '../images/gallery/e9e8c298-d568-41db-aa29-6ee6c36ccbb6_rw_1920.jpg';
 import pic3 from '../images/gallery/7e564ab5-50b0-4469-ab2d-c5fb698ba134_rw_1920.jpg';
 
+
+
+
 export const photos = [
     {
       src: captainwhite,
@@ -44,7 +47,7 @@ const styles = {
 }
 const Photos = () => (
     <div id="photo-wrapper">
-    <Gallery photos={photos} direction={"row"}/>
+      <Gallery photos={photos} direction={"row"}/>
     </div>
 )
 

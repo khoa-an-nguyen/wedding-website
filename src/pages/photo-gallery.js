@@ -43,7 +43,6 @@ import photo36 from '../images/gallery/IMG_2699.jpg'
 import photo37 from '../images/gallery/IMG_2892.jpg'
 
 
-
 export const photos = [
   {
     src: photo1,
