@@ -70,7 +70,7 @@ const Intro = ({ className }) => (
 // Figure out styled components for media queries?
 const StyledBackgroundSection = styled(Intro)`
   width: 100%;
-  height: 43em;
+  height: 38em;
   display: flex;
   align-items: flex-end;
   justify-content: center;
