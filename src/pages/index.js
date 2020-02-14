@@ -13,7 +13,7 @@ import StyledBackgroundSectionThree from '../components/BackgroundSectionThree'
 import SimpleCountdown from '../components/SimpleCountdown'
 import Faqs from '../components/Faq'
 import shadowcreeklogo from '../images/shadowcreek-logo.png'
-import Photos from '../components/photos';
+import GallerySnippet from '../components/GallerySnippet';
 
 
 // TODO
@@ -118,7 +118,7 @@ class Index extends React.Component {
               <ul className="actions">
                   <li>
                     <Link to="/wedding-party" className="button">
-                      Check Out the Rest of the Party!
+                      Check Out the Rest of the Party
                   </Link>
                   </li>
                 </ul>
@@ -192,7 +192,7 @@ class Index extends React.Component {
                         <header className="major">
                           <h2>Photos</h2>
                         </header>
-                    <Photos/>
+                    <GallerySnippet/>
                     <ul className="actions">
                         <li>
                           <Link to="/photo-gallery" className="button">
