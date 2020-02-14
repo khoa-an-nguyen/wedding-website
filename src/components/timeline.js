@@ -11,7 +11,7 @@ const Timeline = () => (
   <VerticalTimelineElement
     className="vertical-timeline-element--work"
     iconStyle={{ background: '#f2f3f4', color: '#636363' }}
-    icon={<img src={ceremonyIcon}></img>}
+    icon={<img className="timeline-icon" src={ceremonyIcon}></img>}
     
   >
     <h3 className="vertical-timeline-element-title cursive-text">Ceremony</h3>
@@ -23,7 +23,7 @@ const Timeline = () => (
   <VerticalTimelineElement
     className="vertical-timeline-element--work"
     iconStyle={{ background: '#f2f3f4', color: '#636363' }}
-    icon={<img className="timeline-icon" src={plateIcon}></img>}
+    icon={<img src={plateIcon}></img>}
   >
     <h3 className="vertical-timeline-element-title cursive-text">Cocktail Hour</h3>
     <h4 className="vertical-timeline-element-subtitle">5:00PM - 6:00PM</h4>
