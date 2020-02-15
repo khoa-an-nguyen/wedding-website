@@ -5,7 +5,6 @@
 ///
 
 /* Nav */
-
 	#nav {
 		@include vendor('transition', (
 			'background-color #{_duration(transition)} ease',
@@ -14,6 +13,7 @@
 			'padding #{_duration(transition)} ease',
 		));
 		@include color-typography(invert);
+		z-index: 1000;
 		position: absolute;
 		width: _size(inner);
 		max-width: calc(100% - #{_size(element-margin) * 2});
@@ -159,6 +159,90 @@
 		}
 	}
 
+	#hamburger-nav {
+		color: black !important;
+
+		@include breakpoint(small) {
+			display: block;
+			color: black !important;
+		}
+	}
+
 	#sub-nav {
 		font-size: .8em;
 	}
+
+	/* Position and sizing of burger button */
+.bm-burger-button {
+	display: none;
+	position: fixed !important;
+	width: 1.5em !important;
+	height: 1.1em !important;
+	left: 1em !important;
+	top: 1em !important;
+	button {
+		border-radius: 0 !important;
+		box-shadow: none !important;
+
+	}
+	@include breakpoint(small) {
+		display: block;
+	}
+  }
+  
+  /* Color/shape of burger icon bars */
+  .bm-burger-bars {
+	background: #636363 !important;
+  }
+  
+  /* Color/shape of burger icon bars on hover*/
+  .bm-burger-bars-hover {
+	background: #636363 !important;
+  } 
+  
+  /* Position and sizing of clickable cross button */
+  .bm-cross-button {
+	height: 24px !important;
+	width: 24px !important;
+  }
+  
+  /* Color/shape of close button cross */
+  .bm-cross {
+	background: white !important;
+  }
+
+  /* General sidebar styles */
+.bm-menu {
+	background: #636363 !important;
+	padding: 2.5em 1.5em 0 !important;
+	font-size: 1.15em !important;
+  }
+  
+  /* Morph shape necessary with bubble or elastic */
+  .bm-morph-shape {
+	fill: #636363 !important;
+  }
+  
+  /* Wrapper for item list */
+  .bm-item-list {
+	color: white !important;
+	padding: 0.8em !important;
+  }
+  
+  /* Individual item */
+  .bm-item {
+	display: inline-block !important;
+	list-style: none !important;
+	text-decoration: none !important;
+	li {
+		a {
+			border-bottom: none !important;
+		}
+	}
+  }
+  
+  /* Styling of overlay */
+  .bm-overlay {
+	background: rgba(0, 0, 0, 0.3) !important;
+  }
+  

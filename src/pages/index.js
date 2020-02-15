@@ -15,6 +15,7 @@ import Faqs from '../components/Faq'
 import shadowcreeklogo from '../images/shadowcreek-logo.png'
 import GallerySnippet from '../components/GallerySnippet';
 import MainParty from '../components/MainParty'
+import HamburgerMenu from '../components/HamburgerMenu'
 
 class Index extends React.Component {
   constructor(props) {
@@ -44,6 +45,7 @@ class Index extends React.Component {
               </Waypoint>
           </section>
           <Nav sticky={this.state.stickyNav} />
+          <HamburgerMenu />
           <div id="main">
               <Intro />
             <section className="main special">
