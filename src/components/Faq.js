@@ -6,7 +6,7 @@ const data = {
   rows: [
     {
       title: "Is there a registry?",
-      content: "We are so happy that you’ll be able to join us for our wedding! Your presence at this special day alone is the greatest gift of all. As many of you know, we are currently saving up for our future home and plan on starting this next step in our journey after our wedding. If are you so kind to give us a gift for our wedding, we request that it is not physical in nature."
+      content: "We are so happy that you’ll be able to join us for our wedding! Your presence on this special day alone is the greatest gift of all, but if you do wish to make a gesture, a contribution towards our future home would be much appreciated!"
     },
     {
       title: "Can I bring a plus one?",
