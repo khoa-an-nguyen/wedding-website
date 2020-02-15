@@ -33,8 +33,13 @@ const BackgroundSectionTwo = ({ className }) => (
 
 const StyledBackgroundSectionTwo = styled(BackgroundSectionTwo)`
   width: 100%;
-  height: 700px;
-
+  height: 40em;
+  @media (max-width: 980px) {
+    height: 30em;
+  }
+  @media (max-width: 736px) {
+  height: 20em;
+  }
 `
 
 export default StyledBackgroundSectionTwo

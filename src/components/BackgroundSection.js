@@ -47,7 +47,13 @@ const BackgroundSectionOne = ({ className }) => (
 
 const StyledBackgroundSection = styled(BackgroundSectionOne)`
   width: 100%;
-  height: 400px;
+  height: 25em;
+  @media (max-width: 980px) {
+    height: 24em;
+  }
+  @media (max-width: 736px) {
+  height: 20em;
+  }
 `
 
 export default StyledBackgroundSection

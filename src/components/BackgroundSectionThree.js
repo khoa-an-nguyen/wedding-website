@@ -18,7 +18,7 @@ const BackgroundSectionThree = ({ className }) => (
     `}
     render={data => {
       // Set ImageData.
-      const imageData = data.desktop.childImageSharp.fluid
+      const imageData = data.desktop.childImageSharp.fluid;
       return (
         <BackgroundImage
           Tag="section"
@@ -33,7 +33,13 @@ const BackgroundSectionThree = ({ className }) => (
 
 const StyledBackgroundSectionThree = styled(BackgroundSectionThree)`
   width: 100%;
-  height: 500px;
+  height: 25em;
+  @media (max-width: 980px) {
+    height: 23em;
+  }
+  @media (max-width: 736px) {
+  height: 20em;
+  }
 `
 
 export default StyledBackgroundSectionThree
