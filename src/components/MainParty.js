@@ -14,28 +14,28 @@ const MainParty = ({ className }) => (
             beo: file(relativePath: { eq: "party/beo_400x400.jpeg" }) {
                 childImageSharp {
                   fixed(quality: 90, height: 200, width: 200) {
-                    ...GatsbyImageSharpFixed
+                    ...GatsbyImageSharpFixed_withWebp_tracedSVG
                   }
                 }
               }
           mimi: file(relativePath: { eq: "party/mimi_400x400.jpg" }) {
             childImageSharp {
               fixed(quality: 90, height: 200, width: 200) {
-                ...GatsbyImageSharpFixed
+                ...GatsbyImageSharpFixed_withWebp_tracedSVG
               }
             }
           }
           kevin: file(relativePath: { eq: "party/kevin_400x400.jpg" }) {
             childImageSharp {
               fixed(quality: 90, height: 200, width: 200) {
-                ...GatsbyImageSharpFixed
+                ...GatsbyImageSharpFixed_withWebp_tracedSVG
               }
             }
           }
           stacy: file(relativePath: { eq: "party/stacy_400x400.jpeg" }) {
             childImageSharp {
               fixed(quality: 90, height: 200, width: 200) {
-                ...GatsbyImageSharpFixed
+                ...GatsbyImageSharpFixed_withWebp_tracedSVG
               }
             }
           }

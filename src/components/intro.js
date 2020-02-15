@@ -21,14 +21,14 @@ const Intro = ({ className }) => (
         desktop: file(relativePath: { eq: "frontcover-desktop.jpg" }) {
           childImageSharp {
             fluid(quality: 100, maxWidth: 4160) {
-              ...GatsbyImageSharpFluid_tracedSVG
+              ...GatsbyImageSharpFluid_withWebp_tracedSVG
             }
           }
         }
         mobile: file(relativePath: { eq: "frontcover-mobile.jpg" }) {
           childImageSharp {
             fluid(quality: 100, maxWidth: 490) {
-              ...GatsbyImageSharpFluid_tracedSVG
+              ...GatsbyImageSharpFluid_withWebp_tracedSVG
             }
           }
         }
