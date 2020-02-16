@@ -82,7 +82,7 @@ class Index extends React.Component {
               <ul className="actions">
                   <li>
                     <Link to="/wedding-party" className="button">
-                      Check Out the Rest of the Party
+                      See The Rest of the Party
                   </Link>
                   </li>
                 </ul>

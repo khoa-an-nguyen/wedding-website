@@ -8,7 +8,7 @@ function GalleryDynamicLoading({ photos }) {
   const [images, setImages] = useState(photos.slice(0, 4));
   const [pageNum, setPageNum] = useState(1);
   const [loadedAll, setLoadedAll] = useState(false);
-  const TOTAL_PAGES = 6;
+  const TOTAL_PAGES = 7;
   const [currentImage, setCurrentImage] = useState(0);
   const [viewerIsOpen, setViewerIsOpen] = useState(false);
 
