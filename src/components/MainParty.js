@@ -2,11 +2,6 @@ import React from 'react';
 import Img from "gatsby-image"
 import { graphql, StaticQuery } from 'gatsby'
 
-// import party1 from '../images/party/beo.jpeg';
-// import party2 from '../images/party/mimi.jpg';
-// import party3 from '../images/party/kevin.jpg';
-// import party4 from '../images/party/stacy.jpeg';
-
 const MainParty = ({ className }) => (
     <StaticQuery
       query={graphql`
@@ -25,7 +20,7 @@ const MainParty = ({ className }) => (
               }
             }
           }
-          kevin: file(relativePath: { eq: "party/kevin_400x400.jpg" }) {
+          kevin: file(relativePath: { eq: "party/kevin2.jpg" }) {
             childImageSharp {
               fixed(quality: 90, height: 200, width: 200) {
                 ...GatsbyImageSharpFixed_withWebp_tracedSVG
